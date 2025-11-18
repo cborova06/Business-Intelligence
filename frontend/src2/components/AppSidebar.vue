@@ -22,7 +22,7 @@
 		<div>
 			<TrialBanner v-if="is_fc_site" :is-sidebar-collapsed="isSidebarCollapsed" />
 			<SidebarLink
-				:label="isSidebarCollapsed ? 'Expand' : 'Collapse'"
+				:label="isSidebarCollapsed ? __('Expand') : __('Collapse')"
 				:isCollapsed="isSidebarCollapsed"
 				@click="isSidebarCollapsed = !isSidebarCollapsed"
 				class="m-2"

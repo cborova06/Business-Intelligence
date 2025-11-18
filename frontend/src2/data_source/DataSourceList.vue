@@ -96,6 +96,7 @@ const listOptions = ref({
 		{
 			label: __('Status'),
 			key: 'status',
+			getLabel: (props: any) => __(props.row.status || ''),
 			prefix: (props: any) => {
 				const color = props.row.status == 'Inactive' ? 'text-gray-500' : 'text-green-500'
 				return <IndicatorIcon class={color} />
@@ -137,7 +138,7 @@ const listOptions = ref({
 	},
 })
 
-document.title = 'Data Sources | Insights'
+document.title = `${__('Data Sources')} | Insights`
 </script>
 
 <template>

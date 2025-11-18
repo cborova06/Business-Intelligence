@@ -3,7 +3,8 @@ import Checkbox from '../components/Checkbox.vue'
 import DatePickerControl from '../query/components/DatePickerControl.vue'
 import SettingItem from './SettingItem.vue'
 import useSettings from './settings'
-import { __ } from "@/translation";
+import { FileUploader } from 'frappe-ui'
+import { __ } from '@/translation'
 const settings = useSettings()
 settings.load()
 </script>
@@ -15,8 +16,42 @@ settings.load()
 			:label="__('Logo')"
 			:description="__('Appears in the top left corner of the application and in the browser tab next to the page title. Recommended size: 32x32px in PNG format.')"
 		>
-			<div class="flex h-full w-full items-center justify-center rounded border">
-				<img src="../assets/insights-logo-new.svg" alt="Logo" class="w-8 rounded" />
+			<div class="flex h-full w-full items-center justify-between gap-4 rounded border px-4 py-3">
+				<div class="flex items-center gap-3">
+					<div class="flex h-10 w-10 items-center justify-center rounded border bg-black">
+						<img
+							v-if="settings.doc.logo"
+							:src="settings.doc.logo"
+							alt="Logo"
+							class="h-8 w-8 rounded object-contain"
+						/>
+						<img
+							v-else
+							src="../assets/insights-logo-new.svg"
+							alt="Logo"
+							class="h-8 w-8 rounded"
+						/>
+					</div>
+					<p class="text-xs text-gray-600">
+						{{ __('Click “Change Logo” to upload a custom image.') }}
+					</p>
+				</div>
+				<FileUploader
+					:uploadArgs="{
+						doctype: 'Insights Settings',
+						docname: settings.doc.name || 'Insights Settings',
+						fieldname: 'logo',
+						is_private: 0,
+					}"
+					:file-types="['.png', '.jpg', '.jpeg', '.svg', '.webp']"
+					@success="(file) => (settings.doc.logo = file.file_url || file.file_url)"
+				>
+					<template #default="{ openFileSelector }">
+						<Button variant="outline" class="whitespace-nowrap" @click="openFileSelector">
+							{{ __('Change Logo') }}
+						</Button>
+					</template>
+				</FileUploader>
 			</div>
 		</SettingItem>
 

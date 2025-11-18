@@ -53,7 +53,7 @@ const listOptions = ref({
 const dataSourceStore = useDataSourceStore()
 watchEffect(() => {
 	const ds = dataSourceStore.getSource(props.name)
-	document.title = `Tables | ${props.name || ds?.title}`
+	document.title = `${__('Tables')} | ${props.name || ds?.title}`
 })
 </script>
 
@@ -61,7 +61,7 @@ watchEffect(() => {
 	<header class="flex h-12 items-center justify-between border-b py-2.5 pl-5 pr-2">
 		<Breadcrumbs
 			:items="[
-				{ label: 'Data Sources', route: '/data-source' },
+				{ label: __('Data Sources'), route: '/data-source' },
 				{ label: dataSource?.title || props.name, route: `/data-source/${props.name}` },
 			]"
 		/>
