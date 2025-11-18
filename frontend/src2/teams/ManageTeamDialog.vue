@@ -41,7 +41,12 @@ function removeMember(userEmail: string) {
 	)
 }
 
-const activeTab = ref('Members')
+const activeTab = ref<'members' | 'access'>('members')
+
+const tabs = [
+	{ value: 'members', label: __('Members') },
+	{ value: 'access', label: __('Access') },
+]
 </script>
 
 <template>
@@ -76,14 +81,10 @@ const activeTab = ref('Members')
 					class="flex-shrink-0"
 				/>
 
-				<Switch
-					:tabs="[__('Members'), __('Access')]"
-					v-model="activeTab"
-					class="flex-shrink-0"
-				></Switch>
+				<Switch :tabs="tabs" v-model="activeTab" class="flex-shrink-0"></Switch>
 
 				<!-- Manage Members -->
-				<div v-show="activeTab == 'Members'" class="flex flex-1 flex-col gap-3 overflow-hidden">
+				<div v-show="activeTab === 'members'" class="flex flex-1 flex-col gap-3 overflow-hidden">
 					<div class="flex w-full flex-shrink-0 gap-2">
 						<div class="flex-1">
 							<UserSelector
@@ -138,7 +139,7 @@ const activeTab = ref('Members')
 				</div>
 
 				<!-- Manage Access -->
-				<div v-show="activeTab == 'Access'" class="relative flex flex-1 flex-col gap-1 overflow-y-auto">
+				<div v-show="activeTab === 'access'" class="relative flex flex-1 flex-col gap-1 overflow-y-auto">
 					<div
 						v-if="currentTeam.name == 'Admin'"
 						class="rounded bg-gray-50 p-2 text-p-sm text-gray-600"
