@@ -77,16 +77,13 @@ const activeTab = ref('Members')
 				/>
 
 				<Switch
-					:tabs=\"[__('Members'), __('Access')]\"
-					v-model=\"activeTab\"
-					class=\"flex-shrink-0\"
+					:tabs="[__('Members'), __('Access')]"
+					v-model="activeTab"
+					class="flex-shrink-0"
 				></Switch>
 
 				<!-- Manage Members -->
-				<div
-					v-show=\"activeTab == 'Members'\"
-					class="flex flex-1 flex-col gap-3 overflow-hidden"
-				>
+				<div v-show="activeTab == 'Members'" class="flex flex-1 flex-col gap-3 overflow-hidden">
 					<div class="flex w-full flex-shrink-0 gap-2">
 						<div class="flex-1">
 							<UserSelector
@@ -133,7 +130,7 @@ const activeTab = ref('Members')
 						</div>
 						<div
 							v-else
-							class=\"rounded border border-dashed border-gray-300 px-32 py-6 text-center text-sm text-gray-500\"
+							class="rounded border border-dashed border-gray-300 px-32 py-6 text-center text-sm text-gray-500"
 						>
 							{{ __('This team does not have any members') }}
 						</div>
@@ -141,13 +138,10 @@ const activeTab = ref('Members')
 				</div>
 
 				<!-- Manage Access -->
-				<div
-					v-show=\"activeTab == 'Access'\"
-					class="relative flex flex-1 flex-col gap-1 overflow-y-auto"
-				>
+				<div v-show="activeTab == 'Access'" class="relative flex flex-1 flex-col gap-1 overflow-y-auto">
 					<div
 						v-if="currentTeam.name == 'Admin'"
-						class=\"rounded bg-gray-50 p-2 text-p-sm text-gray-600\"
+						class="rounded bg-gray-50 p-2 text-p-sm text-gray-600"
 					>
 						{{ __('Admin team has access to all the data sources and tables. Members of this team are allowed to manage teams, users, and other admin settings') }}
 					</div>

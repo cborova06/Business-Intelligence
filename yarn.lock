@@ -792,13 +792,6 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@playwright/test@^1.32.1":
-  version "1.52.0"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.52.0.tgz#267ec595b43a8f4fa5e444ea503689629e91a5b8"
-  integrity sha512-uh6W7sb55hl7D6vsAeA+V2p5JnlAqzhqFyF0VcJkKZXkgnFcVG9PziERRHQfPLfNGx1C292a4JqbWzhR8L4R1g==
-  dependencies:
-    playwright "1.52.0"
-
 "@popperjs/core@^2.11.2", "@popperjs/core@^2.9.0":
   version "2.11.8"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
@@ -2213,11 +2206,6 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fsevents@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
-  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-
 fsevents@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
@@ -2521,10 +2509,10 @@ linkify-it@^5.0.0:
   dependencies:
     uc.micro "^2.0.0"
 
-linkifyjs@^4.2.0:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-4.3.1.tgz#1f246ebf4be040002accd1f4535b6af7c7e37898"
-  integrity sha512-DRSlB9DKVW04c4SUdGvKK5FR6be45lTU9M76JnngqPeeGDqPwYc0zdUErtsNVMtxPXgUWV4HbXbnC4sNyBxkYg==
+linkifyjs@4.3.2, linkifyjs@^4.2.0, linkifyjs@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-4.3.2.tgz#d97eb45419aabf97ceb4b05a7adeb7b8c8ade2b1"
+  integrity sha512-NT1CJtq3hHIreOianA8aSXn6Cw0JzYOuDQbOrSPe7gqFnCpKP++MQe3ODgO3oh2GJFORkAAdqredOa60z63GbA==
 
 local-pkg@^1.0.0, local-pkg@^1.1.1:
   version "1.1.1"
@@ -2918,20 +2906,6 @@ pkg-types@^2.0.1:
     confbox "^0.2.1"
     exsolve "^1.0.1"
     pathe "^2.0.3"
-
-playwright-core@1.52.0:
-  version "1.52.0"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.52.0.tgz#238f1f0c3edd4ebba0434ce3f4401900319a3dca"
-  integrity sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==
-
-playwright@1.52.0:
-  version "1.52.0"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.52.0.tgz#26cb9a63346651e1c54c8805acfd85683173d4bd"
-  integrity sha512-JAwMNMBlxJ2oD1kce4KPtMkDeKGHQstdpFPcPH3maElAXon/QZeTvtsfXmTMRyO9TslfoYOXkSsvao2nE1ilTw==
-  dependencies:
-    playwright-core "1.52.0"
-  optionalDependencies:
-    fsevents "2.3.2"
 
 postcss-import@^15.1.0:
   version "15.1.0"

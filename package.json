@@ -2,6 +2,9 @@
     "private": true,
     "type": "module",
     "workspaces": ["frontend", "frappe-ui"],
+    "resolutions": {
+        "linkifyjs": "4.3.2"
+    },
     "scripts": {
         "postinstall": "cd frontend && yarn install --check-files",
         "dev": "cd frontend && yarn dev",
