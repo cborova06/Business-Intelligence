@@ -47,12 +47,12 @@ class InsightsUserInvitation(Document):
         if frappe.local.dev_server:
             print(f"Invite link for {self.email}: {invite_link}")
 
-        title = "Insights"
+        title = frappe._("Insights")
         template = "insights_invitation"
 
         frappe.sendmail(
             recipients=self.email,
-            subject=f"{title} Invitation",
+            subject=f"{title} {frappe._('Invitation')}",
             template=template,
             args={"title": title, "invite_link": invite_link},
             now=True,

@@ -73,11 +73,11 @@
 		<Dialog
 			v-model="showLoginToFCDialog"
 			:options="{
-				title: 'Login to Frappe Cloud?',
-				message: 'Are you sure you want to login to your Frappe Cloud dashboard?',
+				title: __('Login to Frappe Cloud?'),
+				message: __('Are you sure you want to login to your Frappe Cloud dashboard?'),
 				actions: [
 					{
-						label: 'Confirm',
+						label: __('Confirm'),
 						variant: 'solid',
 						loading: loggingInToFC,
 						onClick() {
@@ -99,7 +99,7 @@ import { showErrorToast, waitUntil } from '../helpers'
 import { confirmDialog } from '../helpers/confirm_dialog'
 import session from '../session'
 import FrappeCloudIcon from './Icons/FrappeCloudIcon.vue'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const props = defineProps<{ isCollapsed?: boolean }>()
 
 const showSwitchToV2Dialog = ref(false)
@@ -122,7 +122,7 @@ const userDropdownOptions = ref([
 		onClick: () =>
 			confirmDialog({
 				title: __('Log out'),
-				message: 'Are you sure you want to log out?',
+				message: __('Are you sure you want to log out?'),
 				onSuccess: session.logout,
 			}),
 	},

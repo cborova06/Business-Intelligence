@@ -47,7 +47,10 @@ const props = defineProps<{
 }>()
 
 function handleClick() {
-	router.push({ name: props.to })
+	// Only navigate if a valid named route is provided.
+	if (props.to && router.hasRoute(props.to)) {
+		router.push({ name: props.to })
+	}
 }
 
 let isActive = computed(() => {

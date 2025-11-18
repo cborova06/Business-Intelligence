@@ -2,7 +2,7 @@ import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { createToast } from '../helpers/toasts'
 import { showErrorToast } from '../helpers'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 export type User = {
 	name: ''
 	email: ''
@@ -78,7 +78,7 @@ function updateUser(email: string, data: Partial<UpdateUser>) {
 			getUsers()
 			createToast({
 				title: __('User Updated'),
-				message: 'User updated successfully',
+				message: __('User updated successfully'),
 				variant: 'success',
 			})
 		})

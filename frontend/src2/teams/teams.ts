@@ -3,6 +3,7 @@ import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { showErrorToast } from '../helpers'
 import { createToast } from '../helpers/toasts'
+import { __ } from '@/translation'
 
 export type TeamMember = {
 	user: string
@@ -52,7 +53,7 @@ async function createTeam(team_name: string) {
 		.then(() => {
 			getTeams()
 			createToast({
-				message: 'Team created',
+				message: __('Team created'),
 				variant: 'success',
 			})
 		})
@@ -71,7 +72,7 @@ async function updateTeam(team: Team) {
 		.then(() => {
 			getTeams()
 			createToast({
-				message: 'Team updated',
+				message: __('Team updated'),
 				variant: 'success',
 			})
 		})

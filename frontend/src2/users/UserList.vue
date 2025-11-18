@@ -6,7 +6,7 @@ import { computed, ref, watch } from 'vue'
 import IndicatorIcon from '../components/Icons/IndicatorIcon.vue'
 import session from '../session'
 import useUserStore, { User } from './users'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const userStore = useUserStore()
 userStore.getUsers()
 
@@ -39,10 +39,10 @@ const listOptions = ref({
 				const user = props.row as User
 				if (user.invitation_status) {
 					return user.invitation_status === 'Pending'
-						? 'Invitation Sent'
-						: 'Invitation Expired'
+						? __('Invitation Sent')
+						: __('Invitation Expired')
 				}
-				return props.row.enabled ? 'Enabled' : 'Disabled'
+				return props.row.enabled ? __('Enabled') : __('Disabled')
 			},
 			prefix: (props: any) => {
 				let color
@@ -142,7 +142,7 @@ document.title = 'Users | Insights'
 
 <template>
 	<header class="flex h-12 items-center justify-between border-b py-2.5 pl-5 pr-2">
-		<Breadcrumbs :items="[{ label: 'Users', route: '/users' }]" />
+		<Breadcrumbs :items="[{ label: __('Users'), route: '/users' }]" />
 		<div class="flex items-center gap-2">
 			<Button
 				v-if="session.user.is_admin"
@@ -171,10 +171,10 @@ document.title = 'Users | Insights'
 	<Dialog
 		v-model="showInviteUserDialog"
 		:options="{
-			title: 'Invite User',
+			title: __('Invite User'),
 			actions: [
 				{
-					label: 'Send Invitation',
+					label: __('Send Invitation'),
 					variant: 'solid',
 					disabled: !areAllEmailsValid,
 					loading: userStore.sendingInvitation,

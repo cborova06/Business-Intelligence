@@ -1,4 +1,5 @@
-<h2>You have been invited to use Insights</h2>
+{% set _ = frappe.utils.cstr %}
+<h2>{{ _("You have been invited to use Insights") }}</h2>
 <p>
-  <a class="btn btn-primary" href="{{ invite_link }}">Accept Invitation</a>
+  <a class="btn btn-primary" href="{{ invite_link }}">{{ _("Accept Invitation") }}</a>
 </p>
