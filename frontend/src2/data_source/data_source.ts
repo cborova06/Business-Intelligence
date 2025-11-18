@@ -1,19 +1,19 @@
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { defineAsyncComponent, h, reactive, ref } from 'vue'
 import { showErrorToast, toOptions } from '../helpers'
+import { formatTimeAgo } from '../helpers/date'
 import { DatabaseType, DataSource, DataSourceListItem } from './data_source.types'
 
 const sources = ref<DataSourceListItem[]>([])
 
 const loading = ref(false)
 async function fetchSources() {
-	loading.value = true
+loading.value = true
 	sources.value = await call('insights.api.data_sources.get_all_data_sources')
 	sources.value = sources.value.map((source: any) => ({
 		...source,
-		created_from_now: useTimeAgo(source.creation),
-		modified_from_now: useTimeAgo(source.modified),
+		created_from_now: formatTimeAgo(source.creation),
+		modified_from_now: formatTimeAgo(source.modified),
 		title: source.is_site_db && source.title == 'Site DB' ? window.location.hostname : source.title,
 	}))
 	loading.value = false

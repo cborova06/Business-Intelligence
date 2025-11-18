@@ -1,11 +1,11 @@
 <script setup lang="tsx">
-import { useTimeAgo } from '@vueuse/core'
 import { Avatar, Breadcrumbs, ListView } from 'frappe-ui'
 import { PlusIcon, SearchIcon, XIcon } from 'lucide-vue-next'
 import { computed, ref, watch } from 'vue'
 import IndicatorIcon from '../components/Icons/IndicatorIcon.vue'
 import session from '../session'
 import useUserStore, { User } from './users'
+import { formatTimeAgo } from '../helpers/date'
 import { __ } from '@/translation'
 const userStore = useUserStore()
 userStore.getUsers()
@@ -67,7 +67,7 @@ const listOptions = ref({
 				if (!props.row.last_active) {
 					return ''
 				}
-				return useTimeAgo(props.row.last_active).value
+				return formatTimeAgo(props.row.last_active)
 			},
 		},
 	],

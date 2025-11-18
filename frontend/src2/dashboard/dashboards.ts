@@ -1,8 +1,8 @@
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { createInfoToast, createSuccessToast } from '../helpers/toasts'
 import { showErrorToast } from '../helpers'
+import { formatTimeAgo } from '../helpers/date'
 
 export type DashboardListItem = {
 	name: string
@@ -28,8 +28,8 @@ async function fetchDashboards(search_term?: string, limit: number = 50) {
 	})
 	dashboards.value = dashboards.value.map((dashboard: any) => ({
 		...dashboard,
-		created_from_now: useTimeAgo(dashboard.creation),
-		modified_from_now: useTimeAgo(dashboard.modified),
+		created_from_now: formatTimeAgo(dashboard.creation),
+		modified_from_now: formatTimeAgo(dashboard.modified),
 	}))
 	loading.value = false
 	return dashboards.value

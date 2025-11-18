@@ -1,8 +1,8 @@
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { showErrorToast } from '../helpers'
 import { DatabaseType } from '../data_source/data_source.types'
+import { formatTimeAgo } from '../helpers/date'
 
 export type DataStoreTable = {
 	name?: string
@@ -25,7 +25,7 @@ async function getTables(data_source?: string, search_term?: string, limit: numb
 	})
 		.then((data: any) => {
 			return data.map((d: any) => {
-				d.last_synced_from_now = d.last_synced_on ? useTimeAgo(d.last_synced_on) : ''
+				d.last_synced_from_now = d.last_synced_on ? formatTimeAgo(d.last_synced_on) : ''
 				return d
 			})
 		})

@@ -1,11 +1,11 @@
 import router from '@/router'
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { confirmDialog } from '../helpers/confirm_dialog'
 import { createToast } from '../helpers/toasts'
 import { WorkbookListItem } from '../types/workbook.types'
-import { __ } from "@/translation";
+import { formatTimeAgo } from '../helpers/date'
+import { __ } from '@/translation'
 
 const workbooks = ref<WorkbookListItem[]>([])
 
@@ -18,8 +18,8 @@ async function getWorkbooks(search_term?: string, limit: number = 100) {
 	})
 	workbooks.value = workbooks.value.map((workbook: any) => ({
 		...workbook,
-		created_from_now: useTimeAgo(workbook.creation),
-		modified_from_now: useTimeAgo(workbook.modified),
+		created_from_now: formatTimeAgo(workbook.creation),
+		modified_from_now: formatTimeAgo(workbook.modified),
 	}))
 	loading.value = false
 	return workbooks.value

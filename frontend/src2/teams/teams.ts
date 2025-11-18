@@ -1,8 +1,8 @@
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { showErrorToast } from '../helpers'
 import { createToast } from '../helpers/toasts'
+import { formatTimeAgo } from '../helpers/date'
 import { __ } from '@/translation'
 
 export type TeamMember = {
@@ -32,7 +32,7 @@ async function getTeams(search_term = '') {
 		teams.value = res.map((t: any) => {
 			return {
 				...t,
-				creation_from_now: useTimeAgo(t.creation),
+				creation_from_now: formatTimeAgo(t.creation),
 				team_permissions: t.team_permissions.map((p: any) => {
 					return {
 						...p,

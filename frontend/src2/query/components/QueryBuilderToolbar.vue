@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useTimeAgo } from '@vueuse/core'
 import { Copy, MoreHorizontal, PlayIcon, Scroll } from 'lucide-vue-next'
 import { h, inject, ref } from 'vue'
+import { formatTimeAgo } from '../../helpers/date'
 import { Query } from '../query'
 import ViewSQLDialog from './ViewSQLDialog.vue'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const query = inject('query') as Query
 
 const showViewSQLDialog = ref(false)
@@ -34,7 +34,7 @@ const moreActions = [
 				<div>
 					<span v-if="query.result.timeTaken == -1"> {{ __("Fetched from cache") }} </span>
 					<span v-else> Fetched in {{ query.result.timeTaken }}s </span>
-					<span> {{ useTimeAgo(query.result.lastExecutedAt).value }} </span>
+					<span> {{ formatTimeAgo(query.result.lastExecutedAt) }} </span>
 				</div>
 			</div>
 		</div>

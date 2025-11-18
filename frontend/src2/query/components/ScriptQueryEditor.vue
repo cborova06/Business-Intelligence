@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useTimeAgo } from '@vueuse/core'
 import { Braces, Bug, MoreHorizontal, Play } from 'lucide-vue-next'
 import { inject, ref } from 'vue'
 import Code from '../../components/Code.vue'
 import ContentEditable from '../../components/ContentEditable.vue'
 import VariablesDialog from '../../components/VariablesDialog.vue'
 import { attachRealtimeListener, wheneverChanges } from '../../helpers'
+import { formatTimeAgo } from '../../helpers/date'
 import session from '../../session'
 import { Query } from '../query'
 import QueryDataTable from './QueryDataTable.vue'
@@ -122,7 +122,7 @@ function handleSaveVariables(variables: any[]) {
 			<div>
 				<span v-if="query.result.timeTaken == -1"> {{ __("Fetched from cache") }} </span>
 				<span v-else> Fetched in {{ query.result.timeTaken }}s </span>
-				<span> {{ useTimeAgo(query.result.lastExecutedAt).value }} </span>
+				<span> {{ formatTimeAgo(query.result.lastExecutedAt) }} </span>
 			</div>
 		</div>
 

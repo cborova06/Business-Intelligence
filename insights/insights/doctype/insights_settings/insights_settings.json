@@ -10,7 +10,6 @@
   "enable_permissions",
   "enable_data_store",
   "apply_user_permissions",
-  "logo",
   "allowed_origins",
   "max_records_to_sync",
   "max_memory_usage",
@@ -30,15 +29,10 @@
  ],
  "fields": [
   {
-   "default": "0",
-   "fieldname": "setup_complete",
-   "fieldtype": "Check",
-   "label": "Setup Complete"
-  },
-  {
-   "fieldname": "logo",
-   "fieldtype": "Attach Image",
-   "label": "Logo"
+  "default": "0",
+  "fieldname": "setup_complete",
+  "fieldtype": "Check",
+  "label": "Setup Complete"
   },
   {
    "fieldname": "onboarding_section",

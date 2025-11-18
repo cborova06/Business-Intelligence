@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useTimeAgo } from '@vueuse/core'
 import { MoreHorizontal, Play, Wand2 } from 'lucide-vue-next'
 import { computed, inject, ref } from 'vue'
 import Code from '../../components/Code.vue'
 import ContentEditable from '../../components/ContentEditable.vue'
 import useDataSourceStore from '../../data_source/data_source'
 import { wheneverChanges } from '../../helpers'
+import { formatTimeAgo } from '../../helpers/date'
 import { Query } from '../query'
 import QueryDataTable from './QueryDataTable.vue'
 import DataSourceSelector from './source_selector/DataSourceSelector.vue'
@@ -148,7 +148,7 @@ const completions = computed(() => {
 			<div>
 				<span v-if="query.result.timeTaken == -1"> {{ __("Fetched from cache") }} </span>
 				<span v-else> Fetched in {{ query.result.timeTaken }}s </span>
-				<span> {{ useTimeAgo(query.result.lastExecutedAt).value }} </span>
+				<span> {{ formatTimeAgo(query.result.lastExecutedAt) }} </span>
 			</div>
 		</div>
 		<div class="relative flex w-full flex-1 flex-col overflow-hidden rounded border">

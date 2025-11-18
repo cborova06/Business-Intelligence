@@ -1,13 +1,13 @@
 <script setup lang="tsx">
-import { useTimeAgo } from '@vueuse/core'
 import { ListView } from 'frappe-ui'
 import { Plus, SearchIcon } from 'lucide-vue-next'
 import { computed, ref } from 'vue'
 import IndicatorIcon from '../../components/Icons/IndicatorIcon.vue'
+import { formatTimeAgo } from '../../helpers/date'
 import { getUniqueId } from '../../helpers'
 import useAlertStore from '../alert'
 import { Query } from '../query'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const emit = defineEmits({
 	'set-current-alert-name': (alert_name: string) => true,
 })
@@ -58,7 +58,7 @@ const listOptions = ref({
 				if (!props.row.last_execution) {
 					return ''
 				}
-				return useTimeAgo(props.row.last_execution).value
+				return formatTimeAgo(props.row.last_execution)
 			},
 		},
 	],

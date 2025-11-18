@@ -3,10 +3,16 @@ import Checkbox from '../components/Checkbox.vue'
 import DatePickerControl from '../query/components/DatePickerControl.vue'
 import SettingItem from './SettingItem.vue'
 import useSettings from './settings'
-import { FileUploader } from 'frappe-ui'
 import { __ } from '@/translation'
+
 const settings = useSettings()
 settings.load()
+
+const weekStartValues = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const weekStartOptions = weekStartValues.map((value) => ({
+	label: __(value),
+	value,
+}))
 </script>
 
 <template>
@@ -16,47 +22,14 @@ settings.load()
 			:label="__('Logo')"
 			:description="__('Appears in the top left corner of the application and in the browser tab next to the page title. Recommended size: 32x32px in PNG format.')"
 		>
-			<div class="flex w-full flex-col items-center gap-3 rounded border px-4 py-3">
-				<div class="flex h-16 w-16 items-center justify-center rounded border bg-black">
-					<img
-						v-if="settings.doc.logo"
-						:src="settings.doc.logo"
-						alt="Logo"
-						class="h-8 w-8 object-contain"
-					/>
-					<img
-						v-else
-						src="../assets/insights-logo-new.svg"
-						alt="Logo"
-						class="h-8 w-8 object-contain"
-					/>
-				</div>
-				<p class="text-center text-xs text-gray-600">
-					{{ __('Click “Change Logo” to upload a custom image.') }}
-				</p>
-				<FileUploader
-					:uploadArgs="{
-						doctype: 'Insights Settings',
-						docname: settings.doc.name || 'Insights Settings',
-						fieldname: 'logo',
-						is_private: 0,
-					}"
-					:file-types="['.png', '.jpg', '.jpeg', '.svg', '.webp']"
-					@success="(file) => (settings.doc.logo = file.file_url || file.file_url)"
-				>
-					<template #default="{ openFileSelector }">
-						<Button size="sm" variant="outline" class="whitespace-nowrap" @click="openFileSelector">
-							{{ __('Change Logo') }}
-						</Button>
-					</template>
-				</FileUploader>
+			<div class="flex h-full w-full items-center justify-center rounded border">
+				<img src="../assets/insights-logo-new.svg" alt="Logo" class="w-8 rounded" />
 			</div>
 		</SettingItem>
 
 		<SettingItem
 			:label="__('Fiscal Year Start')"
-			description="Set the start of the fiscal year for the organization. This will be used to calculate
-					quarterly and yearly data."
+			:description="__('Set the start of the fiscal year for the organization. This will be used to calculate quarterly and yearly data.')"
 		>
 			<DatePickerControl
 				class="w-28"
@@ -74,15 +47,7 @@ settings.load()
 				class="w-28"
 				type="select"
 				v-model="settings.doc.week_starts_on"
-				:options="[
-					'Sunday',
-					'Monday',
-					'Tuesday',
-					'Wednesday',
-					'Thursday',
-					'Friday',
-					'Saturday',
-				]"
+				:options="weekStartOptions"
 			/>
 		</SettingItem>
 

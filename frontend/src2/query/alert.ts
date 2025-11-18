@@ -1,8 +1,8 @@
-import { useTimeAgo } from '@vueuse/core'
 import { call } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 import { getUniqueId, showErrorToast } from '../helpers'
 import useDocumentResource from '../helpers/resource'
+import { formatTimeAgo } from '../helpers/date'
 
 export type InsightsAlert = {
 	doctype: 'Insights Alert'
@@ -35,8 +35,8 @@ async function loadAlerts(query: string) {
 	alerts.value = await call('insights.api.alerts.get_alerts', { query })
 	alerts.value = alerts.value.map((alert: any) => ({
 		...alert,
-		created_from_now: useTimeAgo(alert.creation),
-		modified_from_now: useTimeAgo(alert.modified),
+		created_from_now: formatTimeAgo(alert.creation),
+		modified_from_now: formatTimeAgo(alert.modified),
 	}))
 	loading.value = false
 	return alerts.value
