@@ -1,6 +1,7 @@
 # Copyright (c) 2025, Frappe Technologies Pvt. Ltd. and contributors
 # For license information, please see license.txt
 
+import io
 import re
 from contextlib import contextmanager
 
@@ -11,6 +12,152 @@ from frappe.query_builder import Interval
 from frappe.query_builder.functions import Now
 
 from insights.utils import DocShare, File
+
+
+def _generate_local_preview_placeholder() -> bytes:
+    """
+    Generate a simple static preview image.
+
+    This avoids the need for an external preview service while still providing
+    a visually neutral thumbnail for dashboard cards.
+    """
+    try:
+        from PIL import Image, ImageDraw  # type: ignore
+    except Exception:
+        # Pillow is expected to be available, but fall back to a tiny JPEG if not.
+        return (
+            b"\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00H\x00\x00\xff\xd9"
+        )
+
+    width, height = 640, 360
+
+    # Overall palette: soft light background, subtle accent colors.
+    bg_color = (248, 249, 252)  # near-white
+    card_color = (241, 243, 247)
+    border_color = (220, 224, 235)
+    bar_color = (112, 156, 255)  # soft blue
+    bar_color_alt = (142, 184, 255)
+    line_color = (88, 178, 150)  # soft teal
+    line_point_fill = (255, 255, 255)
+    line_point_border = (88, 178, 150)
+
+    image = Image.new("RGB", (width, height), color=bg_color)
+    draw = ImageDraw.Draw(image)
+
+    outer_margin = 24
+    card_box = (
+        outer_margin,
+        outer_margin,
+        width - outer_margin,
+        height - outer_margin,
+    )
+    draw.rounded_rectangle(
+        card_box, radius=14, fill=card_color, outline=border_color, width=2
+    )
+
+    # Split card into two areas: left bar chart, right line chart.
+    split_x = card_box[0] + int((card_box[2] - card_box[0]) * 0.55)
+
+    # Bar chart area.
+    bar_margin = 28
+    bar_area = (
+        card_box[0] + bar_margin,
+        card_box[1] + bar_margin,
+        split_x - bar_margin,
+        card_box[3] - bar_margin,
+    )
+
+    bar_count = 5
+    bar_width = (bar_area[2] - bar_area[0]) // (bar_count * 2)
+    max_bar_height = bar_area[3] - bar_area[1] - 20
+    bar_heights = [0.45, 0.6, 0.7, 0.85, 0.75]
+
+    x = bar_area[0]
+    for i in range(bar_count):
+        h = max_bar_height * bar_heights[i]
+        top = bar_area[3] - h
+        bar_box = (x, top, x + bar_width, bar_area[3])
+        color = bar_color if i % 2 == 0 else bar_color_alt
+        draw.rounded_rectangle(bar_box, radius=4, fill=color)
+        x += bar_width * 2
+
+    # Line chart area (top-right).
+    line_margin_h = 28
+    line_margin_v = 32
+    line_area = (
+        split_x + line_margin_h,
+        card_box[1] + line_margin_v,
+        card_box[2] - line_margin_h,
+        card_box[1] + (card_box[3] - card_box[1]) // 2,
+    )
+
+    # Draw faint axes.
+    draw.line(
+        (line_area[0], line_area[3], line_area[2], line_area[3]),
+        fill=border_color,
+        width=1,
+    )
+    draw.line(
+        (line_area[0], line_area[1], line_area[0], line_area[3]),
+        fill=border_color,
+        width=1,
+    )
+
+    # Line points (normalized 0–1).
+    points_norm = [0.2, 0.4, 0.3, 0.6, 0.8, 0.7]
+    step_x = (line_area[2] - line_area[0]) / (len(points_norm) - 1)
+    line_points = []
+    for idx, val in enumerate(points_norm):
+        x = line_area[0] + step_x * idx
+        y = line_area[3] - (line_area[3] - line_area[1] - 6) * val
+        line_points.append((x, y))
+
+    if len(line_points) > 1:
+        draw.line(line_points, fill=line_color, width=3)
+        # Points
+        for x, y in line_points:
+            r = 4
+            draw.ellipse(
+                (x - r, y - r, x + r, y + r),
+                fill=line_point_fill,
+                outline=line_point_border,
+                width=2,
+            )
+
+    # Small legend chips at the bottom-right.
+    legend_y = card_box[3] - 28
+    legend_x = split_x + line_margin_h
+    legend_height = 10
+    legend_width = 28
+    gap = 10
+
+    # Bar legend.
+    draw.rounded_rectangle(
+        (
+            legend_x,
+            legend_y,
+            legend_x + legend_width,
+            legend_y + legend_height,
+        ),
+        radius=3,
+        fill=bar_color,
+    )
+    # Line legend.
+    legend_x += legend_width + gap
+    draw.rounded_rectangle(
+        (
+            legend_x,
+            legend_y,
+            legend_x + legend_width,
+            legend_y + legend_height,
+        ),
+        radius=3,
+        fill=line_color,
+    )
+
+    buffer = io.BytesIO()
+    image.save(buffer, format="JPEG", quality=80)
+    return buffer.getvalue()
 
 
 class InsightsDashboardv3(Document):
@@ -243,25 +390,42 @@ class InsightsDashboardv3(Document):
 
 
 def get_page_preview(url: str, headers: dict | None = None) -> bytes:
-    PREVIEW_GENERATOR_URL = (
-        frappe.conf.preview_generator_url
-        or "https://preview.frappe.cloud/api/method/preview_generator.api.generate_preview_from_url"
-    )
+    """
+    Return dashboard preview bytes.
 
-    response = requests.post(
-        PREVIEW_GENERATOR_URL,
-        json={
-            "url": url,
-            "headers": headers or {},
-            "wait_for": 1000,
-        },
-    )
-    if response.status_code == 200:
-        return response.content
-    else:
-        exception = response.json()
-        frappe.log_error(message=exception, title="Failed to generate preview")
-        frappe.throw("Failed to generate preview")
+    If ``frappe.conf.preview_generator_url`` is configured, Insights will try
+    to call that external service. On any error, or when no service URL is set,
+    a local placeholder image is generated instead so the UI always has a
+    reasonable thumbnail without extra runtime dependencies.
+    """
+    service_url = getattr(frappe.conf, "preview_generator_url", None)
+
+    if service_url:
+        try:
+            response = requests.post(
+                service_url,
+                json={
+                    "url": url,
+                    "headers": headers or {},
+                    "wait_for": 1000,
+                },
+                timeout=15,
+            )
+            if response.status_code == 200:
+                return response.content
+
+            try:
+                exception = response.json()
+            except Exception:
+                exception = {"status_code": response.status_code}
+            frappe.log_error(message=exception, title="Failed to generate preview")
+        except Exception:
+            frappe.log_error(
+                message=frappe.get_traceback(),
+                title="Error calling preview generator service",
+            )
+
+    return _generate_local_preview_placeholder()
 
 
 def create_preview_file(content: bytes, dashboard_name: str):

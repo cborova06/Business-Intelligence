@@ -109,12 +109,12 @@ const userDropdownOptions = ref([
 	{
 		label: 'Documentation',
 		icon: h(HelpCircle),
-		onClick: () => window.open('https://docs.frappe.io/insights', '_blank'),
+		onClick: () => window.open('https://www.brvsoftware.com.tr/ilk-talebinizi-olusturun/', '_blank'),
 	},
 	{
 		label: 'Join Telegram Group',
 		icon: h(MessageCircle),
-		onClick: () => window.open('https://t.me/frappeinsights', '_blank'),
+		onClick: () => window.open('https://t.me/+905102232035', '_blank'),
 	},
 	{
 		label: 'Log out',

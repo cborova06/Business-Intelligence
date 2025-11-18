@@ -70,7 +70,7 @@
 						{
 							label: 'Join Telegram Group',
 							icon: 'message-circle',
-							onClick: () => open('https://t.me/frappeinsights'),
+							onClick: () => open('https://t.me/+905102232035'),
 						},
 						{
 							label: 'Help',
