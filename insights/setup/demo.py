@@ -6,6 +6,7 @@ import shutil
 from contextlib import contextmanager
 
 import frappe
+from frappe import _
 
 from insights.api.data_sources import get_data_source_tables
 from insights.insights.doctype.insights_data_source_v3.insights_data_source_v3 import (
