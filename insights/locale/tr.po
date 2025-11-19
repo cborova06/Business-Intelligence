@@ -1,0 +1,3073 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: insights\n"
+"POT-Creation-Date: 2025-11-17 00:00+0000\n"
+"PO-Revision-Date: 2025-11-17 00:00+0000\n"
+"Last-Translator: BRV Software\n"
+"Language-Team: BRV Software\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+# Auto-added by i18n_wrap.py on 2025-11-17T16:06:04
+msgid "Alert sent"
+msgstr "Uyarı gönderildi"
+
+msgid "Failed to login"
+msgstr "Giriş başarısız"
+
+msgid "Failed to setup demo data"
+msgstr "Demo verisi kurulamadı"
+
+msgid "Folder and item must belong to the same workbook"
+msgstr "Klasör ve öğe aynı çalışma kitabına ait olmalıdır"
+
+msgid "Frappe Insights"
+msgstr "Frappe Insights"
+
+msgid "Mark as Failed"
+msgstr "Başarısız olarak işaretle"
+
+msgid "Run"
+msgstr "Çalıştır"
+
+msgid "Send Alert"
+msgstr "Uyarı Gönder"
+
+msgid "Sending Alert..."
+msgstr "Uyarı gönderiliyor..."
+
+msgid "Setting up demo data"
+msgstr "Demo verisi ayarlanıyor"
+
+msgid "Wrapping up"
+msgstr "Tamamlanıyor"
+
+msgid "You do not have permission to access this resource"
+msgstr "Bu kaynağa erişim izniniz yok"
+
+msgid "You do not have permission to modify this workbook"
+msgstr "Bu çalışma kitabını değiştirme izniniz yok"
+
+msgid "You do not have permission to share this workbook"
+msgstr "Bu çalışma kitabını paylaşma izniniz yok"
+
+msgid "creation"
+msgstr "oluşturulma"
+
+msgid "data_source_title"
+msgstr "veri_kaynağı_başlığı"
+
+msgid "label"
+msgstr "etiket"
+
+msgid "members_count"
+msgstr "üye_sayısı"
+
+msgid "name"
+msgstr "isim"
+
+msgid "owner_image"
+msgstr "sahip_resmi"
+
+msgid "owner_name"
+msgstr "sahip_adı"
+
+msgid "parent"
+msgstr "ebeveyn"
+
+msgid "table_label"
+msgstr "tablo_etiketi"
+
+msgid "value"
+msgstr "değer"
+
+## Auto-added from wrap-report on 2025-11-17T16:07:33
+msgid "# Example"
+msgstr "# Örnek"
+
+msgid "# Syntax"
+msgstr "# Söz Dizimi"
+
+msgid "* required"
+msgstr "* zorunlu"
+
+msgid "**********"
+msgstr "**********"
+
+msgid "**********************"
+msgstr "**********************"
+
+msgid "-"
+msgstr "-"
+
+msgid "/"
+msgstr "/"
+
+msgid "10"
+msgstr "10"
+
+msgid "12th Jan, 20"
+msgstr "12 Ocak, 20"
+
+msgid "12th January, 2020"
+msgstr "12 Ocak 2020"
+
+msgid "1:00 PM"
+msgstr "13:00"
+
+msgid "2 selected"
+msgstr "2 seçildi"
+
+msgid "30Â°"
+msgstr "30°"
+
+msgid "403"
+msgstr "403"
+
+msgid "404"
+msgstr "404"
+
+msgid "45Â°"
+msgstr "45°"
+
+msgid "60Â°"
+msgstr "60°"
+
+msgid "75Â°"
+msgstr "75°"
+
+msgid "90Â°"
+msgstr "90°"
+
+msgid "="
+msgstr "="
+
+msgid "Above average"
+msgstr "Ortalamanın üzerinde"
+
+msgid "Access"
+msgstr "Erişim"
+
+msgid "Action if exists"
+msgstr "Varsa işlem yap"
+
+msgid "Actions"
+msgstr "Eylemler"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Add Column"
+msgstr "Sütun Ekle"
+
+msgid "Add Data Source"
+msgstr "Veri Kaynağı Ekle"
+
+msgid "Add Filter"
+msgstr "Filtre Ekle"
+
+msgid "Add Link"
+msgstr "Bağlantı Ekle"
+
+msgid "Add New Column"
+msgstr "Yeni Sütun Ekle"
+
+msgid "Add Operation"
+msgstr "İşlem Ekle"
+
+msgid "Add Row"
+msgstr "Satır Ekle"
+
+msgid "Add Team"
+msgstr "Takım Ekle"
+
+msgid "Add User"
+msgstr "Kullanıcı Ekle"
+
+msgid "Add Variable"
+msgstr "Değişken Ekle"
+
+msgid "Add Video"
+msgstr "Video Ekle"
+
+msgid "Add a member"
+msgstr "Bir üye ekle"
+
+msgid "Add a new column based on existing columns"
+msgstr "Mevcut sütunlara dayalı yeni bir sütun ekle"
+
+msgid "Add a team to share with"
+msgstr "Paylaşmak için bir takım ekle"
+
+msgid "Add column"
+msgstr "Sütun ekle"
+
+msgid "Add filter"
+msgstr "Filtre ekle"
+
+msgid "Add members"
+msgstr "Üyeler ekle"
+
+msgid "Add to Dashboard"
+msgstr "Gösterge Tablosuna Ekle"
+
+msgid "Add to dashboard"
+msgstr "Gösterge tablosuna ekle"
+
+msgid "Aggregate"
+msgstr "Topla"
+
+msgid "Aggregation"
+msgstr "Toplama"
+
+msgid "Alert Name"
+msgstr "Uyarı Adı"
+
+msgid "Alert Sent"
+msgstr "Uyarı Gönderildi"
+
+msgid "Alerts"
+msgstr "Uyarılar"
+
+msgid "Align"
+msgstr "Hizala"
+
+msgid "All"
+msgstr "Tümü"
+
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Allow selecting query as a table in another query. Any query selected as a table will be appended as a sub query using CTE (Common Table Expression)."
+msgstr "Bir sorgunun başka bir sorguda tablo olarak seçilmesine izin ver. Tablo olarak seçilen her sorgu, CTE (Common Table Expression) kullanılarak alt sorgu olarak eklenecektir."
+
+msgid "Alternate"
+msgstr "Alternatif"
+
+msgid "Amber"
+msgstr "Kehribar"
+
+msgid "An eCommerce dataset with orders, products, customers, and suppliers data."
+msgstr "Siparişler, ürünler, müşteriler ve tedarikçiler verilerini içeren bir e-ticaret veri seti."
+
+msgid "Anyone in the organization can view"
+msgstr "Kuruluştaki herkes görüntüleyebilir"
+
+msgid "Anyone with the link can view"
+msgstr "Bağlantıya sahip olan herkes görüntüleyebilir"
+
+msgid "Appears in the top left corner of the application and in the browser tab next to the page title. Recommended size: 32x32px in PNG format."
+msgstr "Uygulamanın sol üst köşesinde ve tarayıcı sekmesinde sayfa başlığının yanında görünür. Önerilen boyut: 32x32px PNG formatında."
+
+msgid "Append"
+msgstr "Ekle"
+
+msgid "Append Rows"
+msgstr "Satırları Ekle"
+
+msgid "Append Table"
+msgstr "Tabloyu Ekle"
+
+msgid "Append this table with another table or query"
+msgstr "Bu tabloyu başka bir tablo veya sorgu ile birleştir"
+
+msgid "Apply"
+msgstr "Uygula"
+
+msgid "Apply Filters"
+msgstr "Filtreleri Uygula"
+
+msgid "Apply User Permissions"
+msgstr "Kullanıcı İzinlerini Uygula"
+
+msgid "Apply a custom operation using python script"
+msgstr "Python betiği kullanarak özel bir işlem uygula"
+
+msgid "Apply restrictions based on roles and user permissions defined on this site. Only applicable for site data source."
+msgstr "Bu sitede tanımlanan roller ve kullanıcı izinlerine göre kısıtlamalar uygula. Sadece site veri kaynağı için geçerlidir."
+
+msgid "Are you sure you want to delete this notebook?"
+msgstr "Bu not defterini silmek istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to delete this page?"
+msgstr "Bu sayfayı silmek istediğinizden emin misiniz?"
+
+msgid "Array"
+msgstr "Dizi"
+
+msgid "Ascending"
+msgstr "Artan"
+
+msgid "Auto"
+msgstr "Otomatik"
+
+msgid "Auto Execute Query"
+msgstr "Sorguyu Otomatik Çalıştır"
+
+msgid "Automatically execute when tables, columns, or filters are changed."
+msgstr "Tablolar, sütunlar veya filtreler değiştirildiğinde otomatik olarak çalıştır."
+
+msgid "Average"
+msgstr "Ortalama"
+
+msgid "Average of"
+msgstr "Ortalaması"
+
+msgid "Average of..."
+msgstr "... Ortalaması"
+
+msgid "Avg of"
+msgstr "Ort."
+
+msgid "Axis Label"
+msgstr "Eksen Etiketi"
+
+msgid "Axis Title Text"
+msgstr "Eksen Başlık Metni"
+
+msgid "Axis Type"
+msgstr "Eksen Türü"
+
+msgid "Bar"
+msgstr "Çubuk"
+
+msgid "Below average"
+msgstr "Ortalamanın altında"
+
+msgid "Blues"
+msgstr "Maviler"
+
+msgid "Bottom"
+msgstr "Alt"
+
+msgid "Bottom N percent"
+msgstr "En düşük N yüzde"
+
+msgid "Bottom N values"
+msgstr "En düşük N değer"
+
+msgid "Browse Data Sources"
+msgstr "Veri Kaynaklarını Gözat"
+
+msgid "Bug Report"
+msgstr "Hata Raporu"
+
+msgid "Build Query"
+msgstr "Sorgu Oluştur"
+
+msgid "Build Your First Query"
+msgstr "İlk Sorgunu Oluştur"
+
+msgid "CSV Column"
+msgstr "CSV Sütunu"
+
+msgid "CSV Import"
+msgstr "CSV İçe Aktar"
+
+msgid "Cache Cleared"
+msgstr "Önbellek Temizlendi"
+
+msgid "Cache Query Results For"
+msgstr "Sorgu Sonuçlarını Önbelleğe Al"
+
+msgid "Calculate"
+msgstr "Hesapla"
+
+msgid "Calculates average value of the column."
+msgstr "Sütunun ortalama değerini hesaplar."
+
+msgid "Calculates time between two dates."
+msgstr "İki tarih arasındaki zamanı hesaplar."
+
+msgid "Can Edit"
+msgstr "Düzenleyebilir"
+
+msgid "Can View"
+msgstr "Görüntüleyebilir"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Cannot add self as table"
+msgstr "Kendini tablo olarak ekleyemezsin"
+
+msgid "Cannot delete Data Source"
+msgstr "Veri Kaynağı silinemiyor"
+
+msgid "Cannot remove table"
+msgstr "Tablo kaldırılamıyor"
+
+msgid "Cast"
+msgstr "Dönüştür"
+
+msgid "Change Source"
+msgstr "Kaynağı Değiştir"
+
+msgid "Change Type"
+msgstr "Türü Değiştir"
+
+msgid "Channel"
+msgstr "Kanal"
+
+msgid "Chart"
+msgstr "Grafik"
+
+msgid "Chart Type"
+msgstr "Grafik Türü"
+
+msgid "Chart access updated"
+msgstr "Grafik erişimi güncellendi"
+
+msgid "Chart container reference not found"
+msgstr "Grafik konteyner referansı bulunamadı"
+
+msgid "Chart not found"
+msgstr "Grafik bulunamadı"
+
+msgid "Charts"
+msgstr "Grafikler"
+
+msgid "Check once a day"
+msgstr "Günde bir kez kontrol et"
+
+msgid "Check once a month"
+msgstr "Ayda bir kez kontrol et"
+
+msgid "Check once a week"
+msgstr "Haftada bir kez kontrol et"
+
+msgid "Check once an hour"
+msgstr "Saatte bir kez kontrol et"
+
+msgid "Checks if column contains any of the provided values."
+msgstr "Sütunun verilen değerlerden herhangi birini içerip içermediğini kontrol eder."
+
+msgid "Checks if column contains the specified value."
+msgstr "Sütunun belirtilen değeri içerip içermediğini kontrol eder."
+
+msgid "Checks if column ends with the specified value."
+msgstr "Sütunun belirtilen değerle bitip bitmediğini kontrol eder."
+
+msgid "Checks if column excludes the provided values."
+msgstr "Sütunun verilen değerleri hariç tutup tutmadığını kontrol eder."
+
+msgid "Checks if column excludes the specified value."
+msgstr "Sütunun belirtilen değeri hariç tutup tutmadığını kontrol eder."
+
+msgid "Checks if column has a value."
+msgstr "Sütunun bir değeri olup olmadığını kontrol eder."
+
+msgid "Checks if column lacks a value."
+msgstr "Sütunun bir değeri olup olmadığını kontrol eder."
+
+msgid "Checks if column starts with the specified value."
+msgstr "Sütunun belirtilen değerle başlayıp başlamadığını kontrol eder."
+
+msgid "Checks if column value is between two values."
+msgstr "Sütun değerinin iki değer arasında olup olmadığını kontrol eder."
+
+msgid "Checks if column value is within the timespan."
+msgstr "Sütun değerinin zaman aralığında olup olmadığını kontrol eder."
+
+msgid "Choose Columns"
+msgstr "Sütunları Seç"
+
+msgid "Clear"
+msgstr "Temizle"
+
+msgid "Clear All"
+msgstr "Tümünü Temizle"
+
+msgid "Clear all filter"
+msgstr "Tüm filtreleri temizle"
+
+msgid "Click on the \"+\" button to add a new query"
+msgstr "Yeni bir sorgu eklemek için \"+\" düğmesine tıklayın"
+
+msgid "ClickHouse"
+msgstr "ClickHouse"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Code"
+msgstr "Kod"
+
+msgid "Color"
+msgstr "Renk"
+
+msgid "Color Scale"
+msgstr "Renk Ölçeği"
+
+msgid "Color palette"
+msgstr "Renk paleti"
+
+msgid "Column"
+msgstr "Sütun"
+
+msgid "Column Expression"
+msgstr "Sütun İfadesi"
+
+msgid "Column Name"
+msgstr "Sütun Adı"
+
+msgid "Column Type"
+msgstr "Sütun Türü"
+
+msgid "Columns"
+msgstr "Sütunlar"
+
+msgid "Combines values from columns or strings."
+msgstr "Sütunlardan veya metinlerden değerleri birleştirir."
+
+msgid "Compact Layout"
+msgstr "Kompakt Düzen"
+
+msgid "Compact Number Format"
+msgstr "Kompakt Sayı Formatı"
+
+msgid "Compare to"
+msgstr "Karşılaştır"
+
+msgid "Condition"
+msgstr "Koşul"
+
+msgid "Confirm"
+msgstr "Onayla"
+
+msgid "Connect"
+msgstr "Bağlan"
+
+msgid "Connect Your Data"
+msgstr "Verinizi Bağlayın"
+
+msgid "Connect or Upload a spreadsheet"
+msgstr "Bir tablo bağlayın veya yükleyin"
+
+msgid "Connect to ClickHouse"
+msgstr "ClickHouse'a Bağlan"
+
+msgid "Connect to ClickHouse database"
+msgstr "ClickHouse veritabanına bağlan"
+
+msgid "Connect to DuckDB"
+msgstr "DuckDB'ye Bağlan"
+
+msgid "Connect to DuckDB database"
+msgstr "DuckDB veritabanına bağlan"
+
+msgid "Connect to MariaDB"
+msgstr "MariaDB'ye Bağlan"
+
+msgid "Connect to MariaDB database"
+msgstr "MariaDB veritabanına bağlan"
+
+msgid "Connect to PostgreDB"
+msgstr "PostgreDB'ye Bağlan"
+
+msgid "Connect to PostgreSQL"
+msgstr "PostgreSQL'e Bağlan"
+
+msgid "Connect to PostgreSQL database"
+msgstr "PostgreSQL veritabanına bağlan"
+
+msgid "Connect to a MariaDB database"
+msgstr "Bir MariaDB veritabanına bağlan"
+
+msgid "Connect to a PostgreSQL database"
+msgstr "Bir PostgreSQL veritabanına bağlan"
+
+msgid "Connect to your ERPNext site"
+msgstr "ERPNext sitenize bağlanın"
+
+msgid "Connection String"
+msgstr "Bağlantı Dizesi"
+
+msgid "Contact the Team"
+msgstr "Takımla İletişime Geç"
+
+msgid "Content"
+msgstr "İçerik"
+
+msgid "Continue"
+msgstr "Devam Et"
+
+msgid "Convert"
+msgstr "Dönüştür"
+
+msgid "Convert to Expression"
+msgstr "İfadeye Dönüştür"
+
+msgid "Converts string to lowercase."
+msgstr "Metni küçük harfe dönüştürür."
+
+msgid "Converts string to uppercase."
+msgstr "Metni büyük harfe dönüştürür."
+
+msgid "Copied to clipboard"
+msgstr "Panoya kopyalandı"
+
+msgid "Copy JSON"
+msgstr "JSON'u Kopyala"
+
+msgid "Copy Query"
+msgstr "Sorguyu Kopyala"
+
+msgid "Copy to clipboard not supported"
+msgstr "Panoya kopyalama desteklenmiyor"
+
+msgid "Count"
+msgstr "Sayı"
+
+msgid "Count of Records"
+msgstr "Kayıt Sayısı"
+
+msgid "Count of Rows"
+msgstr "Satır Sayısı"
+
+msgid "Count of..."
+msgstr "... Sayısı"
+
+msgid "Counts distinct values of the column."
+msgstr "Sütunun benzersiz değerlerini sayar."
+
+msgid "Counts rows based on column."
+msgstr "Sütuna göre satırları sayar."
+
+msgid "Counts rows that satisfy the condition."
+msgstr "Koşulu sağlayan satırları sayar."
+
+msgid "Create"
+msgstr "Oluştur"
+
+msgid "Create Column"
+msgstr "Sütun Oluştur"
+
+msgid "Create Dashboard"
+msgstr "Gösterge Tablosu Oluştur"
+
+msgid "Create Data Source"
+msgstr "Veri Kaynağı Oluştur"
+
+msgid "Create Measure"
+msgstr "Ölçü Oluştur"
+
+msgid "Create New Dashboard"
+msgstr "Yeni Gösterge Tablosu Oluştur"
+
+msgid "Create Team"
+msgstr "Takım Oluştur"
+
+msgid "Create Your First Dashboard"
+msgstr "İlk Gösterge Tablosunu Oluştur"
+
+msgid "Create a Link"
+msgstr "Bağlantı Oluştur"
+
+msgid "Create a new query to get started."
+msgstr "Başlamak için yeni bir sorgu oluşturun."
+
+msgid "Create a query by writing a python script"
+msgstr "Bir python betiği yazarak sorgu oluşturun"
+
+msgid "Create a query by writing native query"
+msgstr "Doğrudan sorgu yazarak sorgu oluşturun"
+
+msgid "Create a query using the notebook interface"
+msgstr "Not defteri arayüzünü kullanarak sorgu oluşturun"
+
+msgid "Create a query using the visual interface"
+msgstr "Görsel arayüzü kullanarak sorgu oluşturun"
+
+msgid "Create queries with a python script"
+msgstr "Python betiği ile sorgular oluşturun"
+
+msgid "Create queries with a visual interface"
+msgstr "Görsel arayüz ile sorgular oluşturun"
+
+msgid "Create queries with raw SQL"
+msgstr "Ham SQL ile sorgular oluşturun"
+
+msgid "Create teams to group users and manage permissions."
+msgstr "Kullanıcıları gruplamak ve izinleri yönetmek için takımlar oluşturun."
+
+msgid "Created"
+msgstr "Oluşturuldu"
+
+msgid "Created By"
+msgstr "Oluşturan"
+
+msgid "Creation"
+msgstr "Oluşturulma"
+
+msgid "Cron"
+msgstr "Cron"
+
+msgid "Cumulative Count"
+msgstr "Kümülatif Sayı"
+
+msgid "Cumulative Count of Records"
+msgstr "Kayıtların Kümülatif Sayısı"
+
+msgid "Cumulative Sum"
+msgstr "Kümülatif Toplam"
+
+msgid "Cumulative Sum of"
+msgstr "... Kümülatif Toplamı"
+
+msgid "Curved Lines"
+msgstr "Eğri Çizgiler"
+
+msgid "Custom"
+msgstr "Özel"
+
+msgid "Custom Operation"
+msgstr "Özel İşlem"
+
+msgid "DB_1267891"
+msgstr "DB_1267891"
+
+msgid "Dashboard"
+msgstr "Gösterge Tablosu"
+
+msgid "Dashboard Access Updated"
+msgstr "Gösterge Tablosu Erişimi Güncellendi"
+
+msgid "Dashboard Title"
+msgstr "Gösterge Tablosu Başlığı"
+
+msgid "Dashboard access updated"
+msgstr "Gösterge tablosu erişimi güncellendi"
+
+msgid "Dashboards"
+msgstr "Gösterge Tabloları"
+
+msgid "Data Source"
+msgstr "Veri Kaynağı"
+
+msgid "Data Sources"
+msgstr "Veri Kaynakları"
+
+msgid "Data Store"
+msgstr "Veri Deposu"
+
+msgid "Data Type"
+msgstr "Veri Türü"
+
+msgid "Data source updated"
+msgstr "Veri kaynağı güncellendi"
+
+msgid "Database Name"
+msgstr "Veritabanı Adı"
+
+msgid "Database Type"
+msgstr "Veritabanı Türü"
+
+msgid "Date"
+msgstr "Tarih"
+
+msgid "Date Format"
+msgstr "Tarih Formatı"
+
+msgid "Date Rules"
+msgstr "Tarih Kuralları"
+
+msgid "Date Value"
+msgstr "Tarih Değeri"
+
+msgid "Datetime"
+msgstr "Tarih Saat"
+
+msgid "Day"
+msgstr "Gün"
+
+msgid "Day Short"
+msgstr "Gün Kısa"
+
+msgid "Day of Week"
+msgstr "Haftanın Günü"
+
+msgid "Decimal"
+msgstr "Ondalık"
+
+msgid "Decimals"
+msgstr "Ondalıklar"
+
+msgid "Default"
+msgstr "Varsayılan"
+
+msgid "Default Operator"
+msgstr "Varsayılan Operatör"
+
+msgid "Default Value"
+msgstr "Varsayılan Değer"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete Chart"
+msgstr "Grafiği Sil"
+
+msgid "Delete Column"
+msgstr "Sütunu Sil"
+
+msgid "Delete Dashboard"
+msgstr "Gösterge Tablosunu Sil"
+
+msgid "Delete Data Source"
+msgstr "Veri Kaynağını Sil"
+
+msgid "Delete Folder"
+msgstr "Klasörü Sil"
+
+msgid "Delete Notebook"
+msgstr "Not Defterini Sil"
+
+msgid "Delete Page"
+msgstr "Sayfayı Sil"
+
+msgid "Delete Query"
+msgstr "Sorguyu Sil"
+
+msgid "Delete Row"
+msgstr "Satırı Sil"
+
+msgid "Delete Table"
+msgstr "Tabloyu Sil"
+
+msgid "Delete Team"
+msgstr "Takımı Sil"
+
+msgid "Delete Workbook"
+msgstr "Çalışma Kitabını Sil"
+
+msgid "Demo Table"
+msgstr "Demo Tablosu"
+
+msgid "Descending"
+msgstr "Azalan"
+
+msgid "Disabled"
+msgstr "Devre Dışı"
+
+msgid "Discard Changes"
+msgstr "Değişiklikleri At"
+
+msgid "Distinct"
+msgstr "Benzersiz"
+
+msgid "Distinct Count"
+msgstr "Benzersiz Sayı"
+
+msgid "Documentation"
+msgstr "Dokümantasyon"
+
+msgid "Done"
+msgstr "Tamamlandı"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "Download CSV"
+msgstr "CSV İndir"
+
+msgid "Download Failed"
+msgstr "İndirme Başarısız"
+
+msgid "Drill Down"
+msgstr "Detaylandır"
+
+msgid "Drop Duplicates"
+msgstr "Yinelenenleri Kaldır"
+
+msgid "DuckDB"
+msgstr "DuckDB"
+
+msgid "Duplicate"
+msgstr "Çoğalt"
+
+msgid "Duplicate Workbook"
+msgstr "Çalışma Kitabını Çoğalt"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Edit Filter"
+msgstr "Filtreyi Düzenle"
+
+msgid "Edit Text"
+msgstr "Metni Düzenle"
+
+msgid "Editing a filter with a"
+msgstr "Bir filtreyi ... ile düzenliyorsunuz"
+
+msgid "Email"
+msgstr "E-posta"
+
+msgid "Email Accounts"
+msgstr "E-posta Hesapları"
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Enable Curved Lines"
+msgstr "Eğri Çizgileri Etkinleştir"
+
+msgid "Enable Data Store"
+msgstr "Veri Deposunu Etkinleştir"
+
+msgid "Enable Query Reusability"
+msgstr "Sorgu Yeniden Kullanımını Etkinleştir"
+
+msgid "Enable permissions to restrict access to data sources & tables based on teams and users."
+msgstr "Takımlara ve kullanıcılara göre veri kaynaklarına ve tablolara erişimi kısıtlamak için izinleri etkinleştirin."
+
+msgid "Enable the data store to store database tables into a duckdb database for faster & cross-database queries."
+msgstr "Daha hızlı ve çapraz veritabanı sorguları için veri deposunu duckdb veritabanına tablo kaydedecek şekilde etkinleştirin."
+
+msgid "Enter a label..."
+msgstr "Bir etiket girin..."
+
+msgid "Enter a number..."
+msgstr "Bir sayı girin..."
+
+msgid "Enter a prefix..."
+msgstr "Bir önek girin..."
+
+msgid "Enter a suffix..."
+msgstr "Bir sonek girin..."
+
+msgid "Enter a suitable title..."
+msgstr "Uygun bir başlık girin..."
+
+msgid "Enter a value"
+msgstr "Bir değer girin"
+
+msgid "Enter a value..."
+msgstr "Bir değer girin..."
+
+msgid "Enter date"
+msgstr "Tarih girin"
+
+msgid "Enter email"
+msgstr "E-posta girin"
+
+msgid "Enter email address"
+msgstr "E-posta adresi girin"
+
+msgid "Enter filename"
+msgstr "Dosya adı girin"
+
+msgid "Enter filter label"
+msgstr "Filtre etiketi girin"
+
+msgid "Enter filter label..."
+msgstr "Filtre etiketi girin..."
+
+msgid "Enter first name"
+msgstr "Ad girin"
+
+msgid "Enter last name"
+msgstr "Soyad girin"
+
+msgid "Enter team name"
+msgstr "Takım adı girin"
+
+msgid "Enter text"
+msgstr "Metin girin"
+
+msgid "Enter the URL of the DuckDB file"
+msgstr "DuckDB dosyasının URL'sini girin"
+
+msgid "Enter title"
+msgstr "Başlık girin"
+
+msgid "Enter your script here..."
+msgstr "Betik kodunuzu buraya girin..."
+
+msgid "Enter your text content here..."
+msgstr "Metin içeriğinizi buraya girin..."
+
+msgid "Equals"
+msgstr "Eşittir"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid "Error Syncing Tables"
+msgstr "Tablolar senkronize edilirken hata oluştu"
+
+msgid "Example: (t1.column_name = t2.column_name) & (t1.column_name > 10)"
+msgstr "Örnek: (t1.sutun_adi = t2.sutun_adi) & (t1.sutun_adi > 10)"
+
+msgid "Excel"
+msgstr "Excel"
+
+msgid "Execute"
+msgstr "Çalıştır"
+
+msgid "Execute (â+E)"
+msgstr "Çalıştır (⌘+E)"
+
+msgid "Execution Status"
+msgstr "Çalıştırma Durumu"
+
+msgid "Explore Insights with sample data"
+msgstr "Örnek verilerle Insights'ı keşfedin"
+
+msgid "Export Data"
+msgstr "Veriyi Dışa Aktar"
+
+msgid "Export Format"
+msgstr "Dışa Aktarma Formatı"
+
+msgid "Export Successful"
+msgstr "Dışa Aktarma Başarılı"
+
+msgid "Export as PNG"
+msgstr "PNG olarak dışa aktar"
+
+msgid "Expression"
+msgstr "İfade"
+
+msgid "Extracts part of the column value."
+msgstr "Sütun değerinin bir kısmını çıkarır."
+
+msgid "Failed to Update Variables"
+msgstr "Değişkenler güncellenemedi"
+
+msgid "Failed to drill down"
+msgstr "Detaylandırma başarısız"
+
+msgid "Failed to format SQL"
+msgstr "SQL biçimlendirme başarısız"
+
+msgid "Favorites"
+msgstr "Favoriler"
+
+msgid "Feedback"
+msgstr "Geri Bildirim"
+
+msgid "Fetched from cache"
+msgstr "Önbellekten getirildi"
+
+msgid "File"
+msgstr "Dosya"
+
+msgid "File URL"
+msgstr "Dosya URL'si"
+
+msgid "File Uploads"
+msgstr "Dosya Yüklemeleri"
+
+msgid "Filename"
+msgstr "Dosya Adı"
+
+msgid "Filter"
+msgstr "Filtre"
+
+msgid "Filter Group"
+msgstr "Filtre Grubu"
+
+msgid "Filter Rows"
+msgstr "Satırları Filtrele"
+
+msgid "Filter by..."
+msgstr "... ile filtrele"
+
+msgid "Filter rows based on columns or expressions"
+msgstr "Satırları sütunlara veya ifadelere göre filtrele"
+
+msgid "Filter..."
+msgstr "Filtrele..."
+
+msgid "Filters"
+msgstr "Filtreler"
+
+msgid "Finds maximum value of the column."
+msgstr "Sütunun en yüksek değerini bulur."
+
+msgid "Finds minimum value of the column."
+msgstr "Sütunun en düşük değerini bulur."
+
+msgid "Finds start of the given unit (e.g., Month, Year)."
+msgstr "Verilen birimin başlangıcını bulur (örn. Ay, Yıl)."
+
+msgid "First Name"
+msgstr "Ad"
+
+msgid "Fiscal Year Start"
+msgstr "Mali Yıl Başlangıcı"
+
+msgid "Force Execute"
+msgstr "Zorla Çalıştır"
+
+msgid "Force Refresh"
+msgstr "Zorla Yenile"
+
+msgid "Force Run"
+msgstr "Zorla Çalıştır"
+
+msgid "Format SQL"
+msgstr "SQL'i Biçimlendir"
+
+msgid "Format Type"
+msgstr "Biçim Türü"
+
+msgid "Formats date to the given format."
+msgstr "Tarihi verilen formata göre biçimlendirir."
+
+msgid "Formatting Rule"
+msgstr "Biçimlendirme Kuralı"
+
+msgid "Formatting Rules"
+msgstr "Biçimlendirme Kuralları"
+
+msgid "Frequency"
+msgstr "Frekans"
+
+msgid "Full"
+msgstr "Tam"
+
+msgid "Full Name"
+msgstr "Tam Ad"
+
+msgid "Full Outer Join"
+msgstr "Tam Dış Birleştirme"
+
+msgid "Functions"
+msgstr "Fonksiyonlar"
+
+msgid "General"
+msgstr "Genel"
+
+msgid "General Access"
+msgstr "Genel Erişim"
+
+msgid "Generated SQL"
+msgstr "Oluşturulan SQL"
+
+msgid "Gets current date and time."
+msgstr "Geçerli tarih ve saati alır."
+
+msgid "Gets current date."
+msgstr "Geçerli tarihi alır."
+
+msgid "Go to dashboard list"
+msgstr "Gösterge tablosu listesine git"
+
+msgid "Go to data source list"
+msgstr "Veri kaynağı listesine git"
+
+msgid "Go to query list"
+msgstr "Sorgu listesine git"
+
+msgid "Go to settings"
+msgstr "Ayarlar'a git"
+
+msgid "Granularity"
+msgstr "Ayrıntı Düzeyi"
+
+msgid "Green"
+msgstr "Yeşil"
+
+msgid "Green to Red"
+msgstr "Yeşilden Kırmızıya"
+
+msgid "Green-Red"
+msgstr "Yeşil-Kırmızı"
+
+msgid "Greens"
+msgstr "Yeşiller"
+
+msgid "Group & Summarize"
+msgstr "Grupla ve Özetle"
+
+msgid "Group By"
+msgstr "Grupla"
+
+msgid "Group by"
+msgstr "Grupla"
+
+msgid "Group rows by columns and summarize the data"
+msgstr "Satırları sütunlara göre grupla ve veriyi özetle"
+
+msgid "Heading 1"
+msgstr "Başlık 1"
+
+msgid "Heading 2"
+msgstr "Başlık 2"
+
+msgid "Heading 3"
+msgstr "Başlık 3"
+
+msgid "Help"
+msgstr "Yardım"
+
+msgid "Help Us Improve"
+msgstr "Bize Geliştirmemiz İçin Yardımcı Olun"
+
+msgid "Highlight Cell"
+msgstr "Hücreyi Vurgula"
+
+msgid "Home"
+msgstr "Ana Sayfa"
+
+msgid "Hope you enjoyed it!"
+msgstr "Umarız beğenmişsinizdir!"
+
+msgid "Host"
+msgstr "Sunucu"
+
+msgid "Hour"
+msgstr "Saat"
+
+msgid "Hour of Day"
+msgstr "Günün Saati"
+
+msgid "How do I..."
+msgstr "Nasıl yaparım..."
+
+msgid "I am not able to use the app because of this bug"
+msgstr "Bu hata nedeniyle uygulamayı kullanamıyorum"
+
+msgid "I am not sure how to..."
+msgstr "Nasıl yapılacağını bilmiyorum..."
+
+msgid "I found a bug, when I try to..."
+msgstr "Bir hata buldum, ... yapmaya çalışınca"
+
+msgid "I think it would be great if..."
+msgstr "Bence ... harika olurdu"
+
+msgid "Import"
+msgstr "İçe Aktar"
+
+msgid "Import Chart"
+msgstr "Grafiği İçe Aktar"
+
+msgid "Import Failed"
+msgstr "İçe Aktarma Başarısız"
+
+msgid "Import Query"
+msgstr "Sorguyu İçe Aktar"
+
+msgid "Import Table"
+msgstr "Tabloyu İçe Aktar"
+
+msgid "Import Workbook"
+msgstr "Çalışma Kitabını İçe Aktar"
+
+msgid "In Last..."
+msgstr "Son ... içinde"
+
+msgid "India"
+msgstr "Hindistan"
+
+msgid "Inline Labels"
+msgstr "Satır İçi Etiketler"
+
+msgid "Inner"
+msgstr "İç"
+
+msgid "Inner Join"
+msgstr "İç Birleştirme"
+
+msgid "Insights needs access to your data to start analyzing it. Don't worry, we do not store your data."
+msgstr "Insights'ın verilerinizi analiz etmeye başlaması için erişime ihtiyacı var. Endişelenmeyin, verilerinizi saklamıyoruz."
+
+msgid "Insights v3 â¨"
+msgstr "Insights v3 ✨"
+
+msgid "Insufficient options"
+msgstr "Yetersiz seçenek"
+
+msgid "Integer"
+msgstr "Tamsayı"
+
+msgid "Invalid Column"
+msgstr "Geçersiz Sütun"
+
+msgid "Invitation Sent"
+msgstr "Davet Gönderildi"
+
+msgid "Invite User"
+msgstr "Kullanıcı Davet Et"
+
+msgid "Is Assisted Query"
+msgstr "Yardımlı Sorgu"
+
+msgid "Is Native Query"
+msgstr "Doğal Sorgu"
+
+msgid "Is Script Query"
+msgstr "Betik Sorgusu"
+
+msgid "Is Stored"
+msgstr "Saklandı"
+
+msgid "Jan 20"
+msgstr "Oca 20"
+
+msgid "January"
+msgstr "Ocak"
+
+msgid "January 12, 2020 1:00 PM"
+msgstr "12 Ocak 2020 13:00"
+
+msgid "January 12, 2020 1:14 PM"
+msgstr "12 Ocak 2020 13:14"
+
+msgid "January, 2020"
+msgstr "Ocak, 2020"
+
+msgid "Join"
+msgstr "Birleştir"
+
+msgid "Join Table"
+msgstr "Tabloyu Birleştir"
+
+msgid "Join Telegram Group"
+msgstr "Telegram Grubuna Katıl"
+
+msgid "Join Type"
+msgstr "Birleştirme Türü"
+
+msgid "Join this table with another table or query"
+msgstr "Bu tabloyu başka bir tablo veya sorgu ile birleştir"
+
+msgid "Keep all existing rows and include matching rows from the new table"
+msgstr "Tüm mevcut satırları koru ve yeni tablodan eşleşen satırları ekle"
+
+msgid "Keep all rows from both tables"
+msgstr "Her iki tablodaki tüm satırları koru"
+
+msgid "Keep all rows from the new table and include matching rows from the existing table"
+msgstr "Yeni tablodaki tüm satırları koru ve mevcut tablodan eşleşen satırları ekle"
+
+msgid "Keep only rows that have matching values in both tables"
+msgstr "Yalnızca her iki tabloda da eşleşen değerlere sahip satırları tut"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Label Position"
+msgstr "Etiket Konumu"
+
+msgid "Last Active"
+msgstr "Son Aktif"
+
+msgid "Last Execution"
+msgstr "Son Çalıştırma"
+
+msgid "Last Name"
+msgstr "Soyad"
+
+msgid "Last Synced"
+msgstr "Son Senkronizasyon"
+
+msgid "Left"
+msgstr "Sol"
+
+msgid "Left Column"
+msgstr "Sol Sütun"
+
+msgid "Left Join"
+msgstr "Sol Birleştirme"
+
+msgid "Left Table"
+msgstr "Sol Tablo"
+
+msgid "Legend Position"
+msgstr "Gösterge Konumu"
+
+msgid "Let's introduce you to the query builder, where you'll be spending most of your time building queries."
+msgstr "Sorgu oluşturucuyla tanıştıralım, zamanınızın çoğunu sorgu oluşturarak burada geçireceksiniz."
+
+msgid "Like"
+msgstr "Benzer"
+
+msgid "Limit"
+msgstr "Sınır"
+
+msgid "Limit to"
+msgstr "Şuna Sınırla"
+
+msgid "Line"
+msgstr "Çizgi"
+
+msgid "Link URL"
+msgstr "Bağlantı URL'si"
+
+msgid "Links"
+msgstr "Bağlantılar"
+
+msgid "Lists all descendants and self of the given value."
+msgstr "Verilen değerin tüm alt öğelerini ve kendisini listeler."
+
+msgid "Lists all descendants of the given value."
+msgstr "Verilen değerin tüm alt öğelerini listeler."
+
+msgid "Lists distinct values of the column."
+msgstr "Sütunun benzersiz değerlerini listeler."
+
+msgid "Load Preview"
+msgstr "Önizlemeyi Yükle"
+
+msgid "Loading columns..."
+msgstr "Sütunlar yükleniyor..."
+
+msgid "Loading data..."
+msgstr "Veriler yükleniyor..."
+
+msgid "Log in to your account"
+msgstr "Hesabınıza giriş yapın"
+
+msgid "Log out"
+msgstr "Çıkış yap"
+
+msgid "Login to Frappe Cloud"
+msgstr "Frappe Cloud'a Giriş Yap"
+
+msgid "Login to Frappe Cloud?"
+msgstr "Frappe Cloud'a Giriş Yapılsın mı?"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Logout"
+msgstr "Çıkış Yap"
+
+msgid "Logs"
+msgstr "Kayıtlar"
+
+msgid "Manage Access"
+msgstr "Erişimi Yönet"
+
+msgid "Manage Team"
+msgstr "Takımı Yönet"
+
+msgid "Many to Many"
+msgstr "Çoktan Çoka"
+
+msgid "Many to One"
+msgstr "Çoktan Bire"
+
+msgid "Map Type"
+msgstr "Harita Türü"
+
+msgid "MariaDB"
+msgstr "MariaDB"
+
+msgid "Markdown supported"
+msgstr "Markdown destekleniyor"
+
+msgid "Max"
+msgstr "Maksimum"
+
+msgid "Max Column Values"
+msgstr "Maksimum Sütun Değerleri"
+
+msgid "Max Query Result Limit"
+msgstr "Maksimum Sorgu Sonuç Limiti"
+
+msgid "Max Slices"
+msgstr "Maksimum Dilim"
+
+msgid "Max Split Values"
+msgstr "Maksimum Bölme Değeri"
+
+msgid "Max of"
+msgstr "Maksimumu"
+
+msgid "Maximum"
+msgstr "Maksimum"
+
+msgid "Maximum number of rows to be returned by a query. This is to prevent long running queries and memory issues."
+msgstr "Bir sorgu tarafından döndürülecek maksimum satır sayısı. Bu, uzun süren sorguları ve bellek sorunlarını önlemek içindir."
+
+msgid "Maximum of"
+msgstr "Maksimumu"
+
+msgid "Maximum of..."
+msgstr "... Maksimumu"
+
+msgid "Measure Name"
+msgstr "Ölçü Adı"
+
+msgid "Members"
+msgstr "Üyeler"
+
+msgid "Memory Limit"
+msgstr "Bellek Limiti"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "Message Sent"
+msgstr "Mesaj Gönderildi"
+
+msgid "Min"
+msgstr "Minimum"
+
+msgid "Min of"
+msgstr "Minimumu"
+
+msgid "Minimum"
+msgstr "Minimum"
+
+msgid "Minimum of"
+msgstr "Minimumu"
+
+msgid "Minimum of..."
+msgstr "... Minimumu"
+
+msgid "Minute"
+msgstr "Dakika"
+
+msgid "Modified"
+msgstr "Değiştirildi"
+
+msgid "Mon"
+msgstr "Pzt"
+
+msgid "Monday"
+msgstr "Pazartesi"
+
+msgid "Month"
+msgstr "Ay"
+
+msgid "Month of Year"
+msgstr "Yılın Ayı"
+
+msgid "My Database"
+msgstr "Veritabanım"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Negative is better"
+msgstr "Negatif daha iyidir"
+
+msgid "New Alert"
+msgstr "Yeni Uyarı"
+
+msgid "New Column Name"
+msgstr "Yeni Sütun Adı"
+
+msgid "New Dashboard"
+msgstr "Yeni Gösterge Tablosu"
+
+msgid "New Data Source"
+msgstr "Yeni Veri Kaynağı"
+
+msgid "New Notebook"
+msgstr "Yeni Not Defteri"
+
+msgid "New Page"
+msgstr "Yeni Sayfa"
+
+msgid "New Password"
+msgstr "Yeni Şifre"
+
+msgid "New Query"
+msgstr "Yeni Sorgu"
+
+msgid "New Table Label"
+msgstr "Yeni Tablo Etiketi"
+
+msgid "New Table Name"
+msgstr "Yeni Tablo Adı"
+
+msgid "New Team"
+msgstr "Yeni Takım"
+
+msgid "New Workbook"
+msgstr "Yeni Çalışma Kitabı"
+
+msgid "No Aggregation"
+msgstr "Toplama Yok"
+
+msgid "No Data"
+msgstr "Veri Yok"
+
+msgid "No Data Sources."
+msgstr "Veri Kaynağı Yok."
+
+msgid "No Queries Found"
+msgstr "Sorgu Bulunamadı"
+
+msgid "No Query Created."
+msgstr "Sorgu Oluşturulmadı."
+
+msgid "No Table Selected"
+msgstr "Tablo Seçilmedi"
+
+msgid "No Tables Found"
+msgstr "Tablo Bulunamadı"
+
+msgid "No Tables Stored"
+msgstr "Kayıtlı Tablo Yok"
+
+msgid "No alerts"
+msgstr "Uyarı yok"
+
+msgid "No columns selected"
+msgstr "Seçili sütun yok"
+
+msgid "No data sources to display."
+msgstr "Görüntülenecek veri kaynağı yok."
+
+msgid "No data sources."
+msgstr "Veri kaynağı yok."
+
+msgid "No data to display."
+msgstr "Görüntülenecek veri yok."
+
+msgid "No filters added"
+msgstr "Filtre eklenmedi"
+
+msgid "No notebooks to display."
+msgstr "Görüntülenecek not defteri yok."
+
+msgid "No notebooks."
+msgstr "Not defteri yok."
+
+msgid "No pages to display."
+msgstr "Görüntülenecek sayfa yok."
+
+msgid "No pages."
+msgstr "Sayfa yok."
+
+msgid "No tables found for the selected data source."
+msgstr "Seçili veri kaynağı için tablo bulunamadı."
+
+msgid "No tables found in the data store."
+msgstr "Veri deposunda tablo bulunamadı."
+
+msgid "No tables selected"
+msgstr "Seçili tablo yok"
+
+msgid "No tables to display."
+msgstr "Görüntülenecek tablo yok."
+
+msgid "No tables."
+msgstr "Tablo yok."
+
+msgid "No teams to display."
+msgstr "Görüntülenecek takım yok."
+
+msgid "No teams."
+msgstr "Takım yok."
+
+msgid "No users to display."
+msgstr "Görüntülenecek kullanıcı yok."
+
+msgid "No users."
+msgstr "Kullanıcı yok."
+
+msgid "No variables"
+msgstr "Değişken yok"
+
+msgid "No variables added"
+msgstr "Değişken eklenmedi"
+
+msgid "No workbooks to display."
+msgstr "Görüntülenecek çalışma kitabı yok."
+
+msgid "No workbooks."
+msgstr "Çalışma kitabı yok."
+
+msgid "No. of rows to import"
+msgstr "İçe aktarılacak satır sayısı"
+
+msgid "Normalize"
+msgstr "Normalleştir"
+
+msgid "Not Equals"
+msgstr "Eşit Değil"
+
+msgid "Not Found"
+msgstr "Bulunamadı"
+
+msgid "Not Like"
+msgstr "Benzer Değil"
+
+msgid "Not Set"
+msgstr "Ayarlanmadı"
+
+msgid "Notebook"
+msgstr "Not Defteri"
+
+msgid "Notebooks"
+msgstr "Not Defterleri"
+
+msgid "Number Column"
+msgstr "Sayı Sütunu"
+
+msgid "Number of minutes to cache query results. This is to prevent accidental running of the same query multiple times."
+msgstr "Sorgu sonuçlarının önbellekte tutulacağı dakika sayısı. Bu, aynı sorgunun birden fazla kez yanlışlıkla çalıştırılmasını önlemek içindir."
+
+msgid "OR"
+msgstr "VEYA"
+
+msgid "One to Many"
+msgstr "Bire Çok"
+
+msgid "One to One"
+msgstr "Bire Bir"
+
+msgid "Only CSV files upto 10MB"
+msgstr "Yalnızca 10MB'a kadar CSV dosyaları"
+
+msgid "Open Query"
+msgstr "Sorguyu Aç"
+
+msgid "Open Workbook"
+msgstr "Çalışma Kitabını Aç"
+
+msgid "Open in Desk"
+msgstr "Desk'te Aç"
+
+msgid "Operator"
+msgstr "Operatör"
+
+msgid "Options"
+msgstr "Seçenekler"
+
+msgid "Order Analysis"
+msgstr "Sipariş Analizi"
+
+msgid "Organize your visualizations meaningfully by creating a dashboard for you and your team."
+msgstr "Siz ve ekibiniz için bir gösterge tablosu oluşturarak görselleştirmelerinizi anlamlı bir şekilde düzenleyin."
+
+msgid "Overlap"
+msgstr "Çakışma"
+
+msgid "Owner"
+msgstr "Sahip"
+
+msgid "Owner Image"
+msgstr "Sahip Resmi"
+
+msgid "Owner Name"
+msgstr "Sahip Adı"
+
+msgid "Paginate Labels"
+msgstr "Etiketleri Sayfalandır"
+
+msgid "Paragraph"
+msgstr "Paragraf"
+
+msgid "Password"
+msgstr "Şifre"
+
+msgid "People with access"
+msgstr "Erişimi olan kişiler"
+
+msgid "Permission Denied"
+msgstr "İzin Reddedildi"
+
+msgid "Permissions"
+msgstr "İzinler"
+
+msgid "Permissions updated"
+msgstr "İzinler güncellendi"
+
+msgid "Pick Starting Data"
+msgstr "Başlangıç Verisini Seç"
+
+msgid "Pick a chart type and configure options to see the chart here"
+msgstr "Bir grafik türü seçin ve seçenekleri yapılandırarak grafiği burada görüntüleyin"
+
+msgid "Pivot"
+msgstr "Pivot"
+
+msgid "Please answer all questions"
+msgstr "Lütfen tüm soruları yanıtlayın"
+
+msgid "Please enter a title"
+msgstr "Lütfen bir başlık girin"
+
+msgid "Please select a data source first"
+msgstr "Lütfen önce bir veri kaynağı seçin"
+
+msgid "Please select a dataset"
+msgstr "Lütfen bir veri seti seçin"
+
+msgid "Please select an option"
+msgstr "Lütfen bir seçenek seçin"
+
+msgid "Please wait while we refresh the tables from your data source"
+msgstr "Veri kaynağınızdaki tabloları yenilerken lütfen bekleyin"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "PostgreSQL"
+msgstr "PostgreSQL"
+
+msgid "Prefix"
+msgstr "Önek"
+
+msgid "Presets"
+msgstr "Ön Ayarlar"
+
+msgid "Private"
+msgstr "Özel"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Provides default if column is null."
+msgstr "Sütun boşsa varsayılanı sağlar."
+
+msgid "Q1, 2020"
+msgstr "1. Çeyrek, 2020"
+
+msgid "Quarter"
+msgstr "Çeyrek"
+
+msgid "Quarter of Year"
+msgstr "Yılın Çeyreği"
+
+msgid "Queries"
+msgstr "Sorgular"
+
+msgid "Query"
+msgstr "Sorgu"
+
+msgid "Query Builder"
+msgstr "Sorgu Oluşturucu"
+
+msgid "Query Duplicated"
+msgstr "Sorgu Çoğaltıldı"
+
+msgid "Query Store"
+msgstr "Sorgu Deposu"
+
+msgid "Query Stored"
+msgstr "Sorgu Kaydedildi"
+
+msgid "Query Title"
+msgstr "Sorgu Başlığı"
+
+msgid "Query Unstored"
+msgstr "Sorgu Kaydedilmedi"
+
+msgid "Question"
+msgstr "Soru"
+
+msgid "Ranking Condition"
+msgstr "Sıralama Koşulu"
+
+msgid "Ranking Rules"
+msgstr "Sıralama Kuralları"
+
+msgid "Recipients"
+msgstr "Alıcılar"
+
+msgid "Red"
+msgstr "Kırmızı"
+
+msgid "Red to Green"
+msgstr "Kırmızıdan Yeşile"
+
+msgid "Red-Green"
+msgstr "Kırmızı-Yeşil"
+
+msgid "Refresh"
+msgstr "Yenile"
+
+msgid "Refresh Preview"
+msgstr "Önizlemeyi Yenile"
+
+msgid "Refresh Tables"
+msgstr "Tabloları Yenile"
+
+msgid "Refreshing Tables"
+msgstr "Tablolar Yenileniyor"
+
+msgid "Region Column"
+msgstr "Bölge Sütunu"
+
+msgid "Relationships"
+msgstr "İlişkiler"
+
+msgid "Relative Date"
+msgstr "Göreli Tarih"
+
+msgid "Relative Dates"
+msgstr "Göreli Tarihler"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Remove Formatting"
+msgstr "Biçimlendirmeyi Kaldır"
+
+msgid "Remove Member"
+msgstr "Üyeyi Kaldır"
+
+msgid "Remove Sort"
+msgstr "Sıralamayı Kaldır"
+
+msgid "Rename"
+msgstr "Yeniden Adlandır"
+
+msgid "Replaces occurrences in the column."
+msgstr "Sütundaki tekrarları değiştirir."
+
+msgid "Reset Layout"
+msgstr "Düzeni Sıfırla"
+
+msgid "Returns absolute value of the column."
+msgstr "Sütunun mutlak değerini döndürür."
+
+msgid "Returns first non-null value from columns."
+msgstr "Sütunlardan ilk boş olmayan değeri döndürür."
+
+msgid "Returns matched condition value or default."
+msgstr "Eşleşen koşul değerini veya varsayılanı döndürür."
+
+msgid "Reverse Colors"
+msgstr "Renkleri Ters Çevir"
+
+msgid "Right"
+msgstr "Sağ"
+
+msgid "Right Column"
+msgstr "Sağ Sütun"
+
+msgid "Right Table"
+msgstr "Sağ Tablo"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Rotate Labels"
+msgstr "Etiketleri Döndür"
+
+msgid "Rotate Values"
+msgstr "Değerleri Döndür"
+
+msgid "Rounded Bars"
+msgstr "Yuvarlatılmış Çubuklar"
+
+msgid "Rounds the column value down."
+msgstr "Sütun değerini aşağı yuvarlar."
+
+msgid "Rounds the column value up."
+msgstr "Sütun değerini yukarı yuvarlar."
+
+msgid "Rounds the column value."
+msgstr "Sütun değerini yuvarlar."
+
+msgid "Row"
+msgstr "Satır"
+
+msgid "Row Limit"
+msgstr "Satır Limiti"
+
+msgid "Rows"
+msgstr "Satırlar"
+
+msgid "Rule"
+msgstr "Kural"
+
+msgid "Rule Type"
+msgstr "Kural Türü"
+
+msgid "SQL"
+msgstr "SQL"
+
+msgid "SQL Editor"
+msgstr "SQL Düzenleyici"
+
+msgid "Sample Dataset"
+msgstr "Örnek Veri Seti"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Saving..."
+msgstr "Kaydediliyor..."
+
+msgid "Schema"
+msgstr "Şema"
+
+msgid "Script"
+msgstr "Betik"
+
+msgid "Script Editor"
+msgstr "Betik Düzenleyici"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "Search by Title"
+msgstr "Başlığa Göre Ara"
+
+msgid "Search by name"
+msgstr "İsme Göre Ara"
+
+msgid "Search by name or email"
+msgstr "İsim veya e-posta ile ara"
+
+msgid "Search functions"
+msgstr "Fonksiyonları ara"
+
+msgid "Search tables"
+msgstr "Tabloları ara"
+
+msgid "Search..."
+msgstr "Ara..."
+
+msgid "Second"
+msgstr "Saniye"
+
+msgid "Secret Variables Updated"
+msgstr "Gizli Değişkenler Güncellendi"
+
+msgid "Select"
+msgstr "Seç"
+
+msgid "Select All"
+msgstr "Tümünü Seç"
+
+msgid "Select Charts"
+msgstr "Grafikleri Seç"
+
+msgid "Select Color"
+msgstr "Renk Seç"
+
+msgid "Select Column"
+msgstr "Sütun Seç"
+
+msgid "Select Columns"
+msgstr "Sütunları Seç"
+
+msgid "Select Data Source"
+msgstr "Veri Kaynağı Seç"
+
+msgid "Select Date"
+msgstr "Tarih Seç"
+
+msgid "Select Field"
+msgstr "Alan Seç"
+
+msgid "Select Interface Type"
+msgstr "Arayüz Türü Seç"
+
+msgid "Select Source"
+msgstr "Kaynak Seç"
+
+msgid "Select Source Type"
+msgstr "Kaynak Türü Seç"
+
+msgid "Select Table"
+msgstr "Tablo Seç"
+
+msgid "Select Team"
+msgstr "Takım Seç"
+
+msgid "Select Transform Type"
+msgstr "Dönüşüm Türü Seç"
+
+msgid "Select a CSV or Excel file to upload"
+msgstr "Yüklenecek bir CSV veya Excel dosyası seçin"
+
+msgid "Select a Column"
+msgstr "Bir Sütun Seçin"
+
+msgid "Select a Function"
+msgstr "Bir Fonksiyon Seçin"
+
+msgid "Select a chart type"
+msgstr "Bir grafik türü seçin"
+
+msgid "Select a column"
+msgstr "Bir sütun seçin"
+
+msgid "Select a column..."
+msgstr "Bir sütun seçin..."
+
+msgid "Select a data source"
+msgstr "Bir veri kaynağı seçin"
+
+msgid "Select a date format..."
+msgstr "Bir tarih formatı seçin..."
+
+msgid "Select a file"
+msgstr "Bir dosya seçin"
+
+msgid "Select a filter..."
+msgstr "Bir filtre seçin..."
+
+msgid "Select a query"
+msgstr "Bir sorgu seçin"
+
+msgid "Select a source table to start building your query."
+msgstr "Sorgunuzu oluşturmaya başlamak için bir kaynak tablo seçin."
+
+msgid "Select a table or query to start building your query"
+msgstr "Sorgunuzu oluşturmaya başlamak için bir tablo veya sorgu seçin"
+
+msgid "Select a table..."
+msgstr "Bir tablo seçin..."
+
+msgid "Select a total type..."
+msgstr "Bir toplam türü seçin..."
+
+msgid "Select a type..."
+msgstr "Bir tür seçin..."
+
+msgid "Select aggregation type"
+msgstr "Toplama türü seçin"
+
+msgid "Select all"
+msgstr "Tümünü seç"
+
+msgid "Select an operation"
+msgstr "Bir işlem seçin"
+
+msgid "Select an option"
+msgstr "Bir seçenek seçin"
+
+msgid "Select charts to link to this filter. The filter will be applied to the selected column in the linked charts."
+msgstr "Bu filtreye bağlanacak grafikleri seçin. Filtre, bağlı grafiklerdeki seçili sütuna uygulanacaktır."
+
+msgid "Select operator..."
+msgstr "Bir operatör seçin..."
+
+msgid "Select role"
+msgstr "Rol seçin"
+
+msgid "Select team"
+msgstr "Takım seçin"
+
+msgid "Send Invitation"
+msgstr "Davet Gönder"
+
+msgid "Send Test Alert"
+msgstr "Test Uyarısı Gönder"
+
+msgid "Series"
+msgstr "Seriler"
+
+msgid "Set"
+msgstr "Ayarla"
+
+msgid "Set Insights v2 as default"
+msgstr "Insights v2'yi varsayılan yap"
+
+msgid "Set Insights v3 as default"
+msgstr "Insights v3'ü varsayılan yap"
+
+msgid "Set the maximum memory usage while importing tables into the data store. Default is 512MB"
+msgstr "Tabloları veri deposuna aktarırken kullanılacak maksimum bellek miktarını ayarlayın. Varsayılan 512MB'dir"
+
+msgid "Set the maximum number of rows per table that will be imported into the data store. Default is 10,00,000"
+msgstr "Veri deposuna aktarılacak tablo başına maksimum satır sayısını ayarlayın. Varsayılan 1.000.000'dur"
+
+msgid "Set the start of the week for the organization. This will be used to calculate weekly data."
+msgstr "Kuruluş için haftanın başlangıcını ayarlayın. Bu, haftalık verileri hesaplamak için kullanılacaktır."
+
+msgid "Set up alerts to get notified when a condition is met"
+msgstr "Bir koşul karşılandığında bildirim almak için uyarılar ayarlayın"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Settings Updated"
+msgstr "Ayarlar Güncellendi"
+
+msgid "Setup Alert"
+msgstr "Uyarı Kur"
+
+msgid "Share"
+msgstr "Paylaş"
+
+msgid "Share Chart"
+msgstr "Grafiği Paylaş"
+
+msgid "Share Dashboard"
+msgstr "Gösterge Tablosunu Paylaş"
+
+msgid "Shorten Numbers"
+msgstr "Sayıları Kısalt"
+
+msgid "Show Area"
+msgstr "Alanı Göster"
+
+msgid "Show Axis Label"
+msgstr "Eksen Etiketini Göster"
+
+msgid "Show Axis Title"
+msgstr "Eksen Başlığını Göster"
+
+msgid "Show Color Scale"
+msgstr "Renk Ölçeğini Göster"
+
+msgid "Show Column Totals"
+msgstr "Sütun Toplamlarını Göster"
+
+msgid "Show Data Labels"
+msgstr "Veri Etiketlerini Göster"
+
+msgid "Show Data Points"
+msgstr "Veri Noktalarını Göster"
+
+msgid "Show Filter Row"
+msgstr "Filtre Satırını Göster"
+
+msgid "Show Filters"
+msgstr "Filtreleri Göster"
+
+msgid "Show Index Row"
+msgstr "İndeks Satırını Göster"
+
+msgid "Show Inline Bar Chart"
+msgstr "Satır İçi Çubuk Grafiği Göster"
+
+msgid "Show Row Totals"
+msgstr "Satır Toplamlarını Göster"
+
+msgid "Show Scrollbar"
+msgstr "Kaydırma Çubuğunu Göster"
+
+msgid "Show Total Row"
+msgstr "Toplam Satırı Göster"
+
+msgid "Show Trend Line"
+msgstr "Trend Çizgisini Göster"
+
+msgid "Show comparison"
+msgstr "Karşılaştırmayı Göster"
+
+msgid "Show or hide columns from the table"
+msgstr "Tablodan sütunları göster veya gizle"
+
+msgid "Show short numbers"
+msgstr "Kısa sayıları göster"
+
+msgid "Show sparkline"
+msgstr "Kıvılcım grafiğini göster"
+
+msgid "Showing"
+msgstr "Gösteriliyor"
+
+msgid "Showing only the first 100 rows"
+msgstr "Yalnızca ilk 100 satır gösteriliyor"
+
+msgid "Sort"
+msgstr "Sırala"
+
+msgid "Sort Ascending"
+msgstr "Artan Sırala"
+
+msgid "Sort Descending"
+msgstr "Azalan Sırala"
+
+msgid "Source"
+msgstr "Kaynak"
+
+msgid "Specific Dates"
+msgstr "Belirli Tarihler"
+
+msgid "Specific people can view"
+msgstr "Belirli kişiler görüntüleyebilir"
+
+msgid "Split By"
+msgstr "Şuna Göre Böl"
+
+msgid "Split Series"
+msgstr "Serileri Böl"
+
+msgid "Split Y Axis"
+msgstr "Y Ekseni Böl"
+
+msgid "Spreadsheet"
+msgstr "Tablo"
+
+msgid "Stack"
+msgstr "Yığın"
+
+msgid "Stack Values"
+msgstr "Değerleri Yığınla"
+
+msgid "Start of the fiscal year. This is used to calculate fiscal year for date columns."
+msgstr "Mali yılın başlangıcı. Bu, tarih sütunları için mali yılı hesaplamak için kullanılır."
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Store Query"
+msgstr "Sorguyu Kaydet"
+
+msgid "Strikethrough"
+msgstr "Üstü Çizili"
+
+msgid "String"
+msgstr "Metin"
+
+msgid "Success"
+msgstr "Başarılı"
+
+msgid "Suffix"
+msgstr "Sonek"
+
+msgid "Sum"
+msgstr "Toplam"
+
+msgid "Sum of"
+msgstr "Toplamı"
+
+msgid "Sum of..."
+msgstr "... Toplamı"
+
+msgid "Summarize"
+msgstr "Özetle"
+
+msgid "Sums values of the column that satisfy the condition."
+msgstr "Koşulu sağlayan sütun değerlerini toplar."
+
+msgid "Sums values of the column."
+msgstr "Sütun değerlerini toplar."
+
+msgid "Switch"
+msgstr "Geçiş Yap"
+
+msgid "Switch to Desk"
+msgstr "Desk'e Geç"
+
+msgid "Switch to Insights v2"
+msgstr "Insights v2'ye Geç"
+
+msgid "Switch to Insights v3"
+msgstr "Insights v3'e Geç"
+
+msgid "Switch to the newest version of Insights, built from the ground up for a better experience."
+msgstr "Insights'ın en yeni sürümüne geçin, baştan sona daha iyi bir deneyim için oluşturuldu."
+
+msgid "Switch to the old version of Insights?"
+msgstr "Insights'ın eski sürümüne geçilsin mi?"
+
+msgid "Sync Table"
+msgstr "Tabloyu Senkronize Et"
+
+msgid "Sync Tables"
+msgstr "Tabloları Senkronize Et"
+
+msgid "Sync tables from your data source to get started"
+msgstr "Başlamak için veri kaynağınızdaki tabloları senkronize edin"
+
+msgid "Table"
+msgstr "Tablo"
+
+msgid "Table Imported"
+msgstr "Tablo İçe Aktarıldı"
+
+msgid "Table Name"
+msgstr "Tablo Adı"
+
+msgid "Table already added"
+msgstr "Tablo zaten eklendi"
+
+msgid "Tables"
+msgstr "Tablolar"
+
+msgid "Teals"
+msgstr "Camgöbeği"
+
+msgid "Team"
+msgstr "Takım"
+
+msgid "Team Name"
+msgstr "Takım Adı"
+
+msgid "Teams"
+msgstr "Takımlar"
+
+msgid "Telegram Bot Token"
+msgstr "Telegram Bot Anahtarı"
+
+msgid "Telegram Chat ID"
+msgstr "Telegram Sohbet ID"
+
+msgid "Telegram bot token to send notifications to Telegram."
+msgstr "Telegram'a bildirim göndermek için Telegram bot anahtarı."
+
+msgid "Test Get Teams"
+msgstr "Takımları Test Et"
+
+msgid "Test Get Teams Query"
+msgstr "Takımları Getir Sorgusunu Test Et"
+
+msgid "Text"
+msgstr "Metin"
+
+msgid "Text Rules"
+msgstr "Metin Kuralları"
+
+msgid "Text Value"
+msgstr "Metin Değeri"
+
+msgid "This FY"
+msgstr "Bu Mali Yıl"
+
+msgid "This Month"
+msgstr "Bu Ay"
+
+msgid "This Quarter"
+msgstr "Bu Çeyrek"
+
+msgid "This Week"
+msgstr "Bu Hafta"
+
+msgid "This Year"
+msgstr "Bu Yıl"
+
+msgid "This tab doesn't exist"
+msgstr "Bu sekme mevcut değil"
+
+msgid "Time"
+msgstr "Zaman"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Today"
+msgstr "Bugün"
+
+msgid "Top"
+msgstr "Üst"
+
+msgid "Top N percent"
+msgstr "En yüksek N yüzde"
+
+msgid "Top N values"
+msgstr "En yüksek N değer"
+
+msgid "Total Type"
+msgstr "Toplam Türü"
+
+msgid "Transform"
+msgstr "Dönüştür"
+
+msgid "Transpose"
+msgstr "Transpoze Et"
+
+msgid "Try switching to another tab"
+msgstr "Başka bir sekmeye geçmeyi deneyin"
+
+msgid "Type"
+msgstr "Tür"
+
+msgid "Type your query here"
+msgstr "Sorgunuzu buraya yazın"
+
+msgid "Unable to find a relationship"
+msgstr "Bir ilişki bulunamadı"
+
+msgid "Unable to reset main table"
+msgstr "Ana tablo sıfırlanamıyor"
+
+msgid "Union"
+msgstr "Birleşim"
+
+msgid "Unique"
+msgstr "Benzersiz"
+
+msgid "Unique Count of..."
+msgstr "... Benzersiz Sayısı"
+
+msgid "Unique count of"
+msgstr "Benzersiz sayısı"
+
+msgid "Unique values of"
+msgstr "Benzersiz değerleri"
+
+msgid "Unpivot"
+msgstr "Unpivot"
+
+msgid "Unstore Query"
+msgstr "Sorguyu Kaydetme"
+
+msgid "Untitled Analysis"
+msgstr "İsimsiz Analiz"
+
+msgid "Untitled Dashboard"
+msgstr "İsimsiz Gösterge Tablosu"
+
+msgid "Untitled Query"
+msgstr "İsimsiz Sorgu"
+
+msgid "Untitled Workbook"
+msgstr "İsimsiz Çalışma Kitabı"
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "Update Table Links"
+msgstr "Tablo Bağlantılarını Güncelle"
+
+msgid "Update Tables"
+msgstr "Tabloları Güncelle"
+
+msgid "Updating table links"
+msgstr "Tablo bağlantıları güncelleniyor"
+
+msgid "Upgrade plan"
+msgstr "Planı Yükselt"
+
+msgid "Upload CSV File"
+msgstr "CSV Dosyası Yükle"
+
+msgid "Upload CSV or Excel"
+msgstr "CSV veya Excel Yükle"
+
+msgid "Upload Failed"
+msgstr "Yükleme Başarısız"
+
+msgid "Upload a CSV file"
+msgstr "Bir CSV dosyası yükle"
+
+msgid "Upload a CSV or Excel file to create a new data source"
+msgstr "Yeni bir veri kaynağı oluşturmak için bir CSV veya Excel dosyası yükleyin"
+
+msgid "Uploading..."
+msgstr "Yükleniyor..."
+
+msgid "Use Custom Condition"
+msgstr "Özel Koşul Kullan"
+
+msgid "Use secure connection (SSL)?"
+msgstr "Güvenli bağlantı (SSL) kullanılsın mı?"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "User Updated"
+msgstr "Kullanıcı Güncellendi"
+
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "Value"
+msgstr "Değer"
+
+msgid "Value Rules"
+msgstr "Değer Kuralları"
+
+msgid "Values"
+msgstr "Değerler"
+
+msgid "Variables"
+msgstr "Değişkenler"
+
+msgid "Variables Updated"
+msgstr "Değişkenler Güncellendi"
+
+msgid "Variables are used to store sensitive information such as API keys and credentials. They can be referenced and combined in your script just like any other variable. For eg."
+msgstr "Değişkenler, API anahtarları ve kimlik bilgileri gibi hassas bilgileri saklamak için kullanılır. Betiğinizde diğer değişkenler gibi referans verilebilir ve birleştirilebilir. Örn."
+
+msgid "Variables are used to store sensitive information such as API keys and credentials. They can be referenced in your script just like any other variable. For eg.:"
+msgstr "Değişkenler, API anahtarları ve kimlik bilgileri gibi hassas bilgileri saklamak için kullanılır. Betiğinizde diğer değişkenler gibi referans verilebilir. Örn.:"
+
+msgid "View SQL"
+msgstr "SQL'i Görüntüle"
+
+msgid "Views"
+msgstr "Görünümler"
+
+msgid "Visual"
+msgstr "Görsel"
+
+msgid "Visualize"
+msgstr "Görselleştir"
+
+msgid "Week"
+msgstr "Hafta"
+
+msgid "Week Starts On"
+msgstr "Hafta Başlangıcı"
+
+msgid "Welcome to Insights"
+msgstr "Insights'a Hoş Geldiniz"
+
+msgid "What if there was..."
+msgstr "Ya ... olsaydı?"
+
+msgid "When I try to..."
+msgstr "... yapmaya çalıştığımda"
+
+msgid "Where"
+msgstr "Nerede"
+
+msgid "Widget Type"
+msgstr "Widget Türü"
+
+msgid "Workbooks"
+msgstr "Çalışma Kitapları"
+
+msgid "World Map"
+msgstr "Dünya Haritası"
+
+msgid "Write an expression"
+msgstr "Bir ifade yazın"
+
+msgid "Write raw SQL queries."
+msgstr "Ham SQL sorguları yazın."
+
+msgid "X Axis"
+msgstr "X Ekseni"
+
+msgid "Y Axis"
+msgstr "Y Ekseni"
+
+msgid "Y-Max"
+msgstr "Y-Maksimum"
+
+msgid "Y-Min"
+msgstr "Y-Minimum"
+
+msgid "Year"
+msgstr "Yıl"
+
+msgid "Yellows"
+msgstr "Sarılar"
+
+msgid "You"
+msgstr "Sen"
+
+msgid "You are all set to use Insights. We hope you enjoy using it!"
+msgstr "Insights'ı kullanmaya hazırsınız. Umarız kullanmaktan keyif alırsınız!"
+
+msgid "You can also select a query as a source."
+msgstr "Bir sorguyu da kaynak olarak seçebilirsiniz."
+
+msgid "You can always switch back to this version by clicking the \"Switch to Insights v2\" button in the new version."
+msgstr "Yeni sürümdeki \"Insights v2'ye Geç\" düğmesine tıklayarak her zaman bu sürüme geri dönebilirsiniz."
+
+msgid "You can use markdown syntax to format your message. You can also drag and drop images to upload them."
+msgstr "Mesajınızı biçimlendirmek için markdown sözdizimini kullanabilirsiniz. Ayrıca resimleri sürükleyip bırakarak yükleyebilirsiniz."
+
+msgid "You haven't added any queries yet"
+msgstr "Henüz hiç sorgu eklemediniz"
+
+msgid "Your free trial has ended"
+msgstr "Ücretsiz deneme süreniz sona erdi"
+
+msgid "after date"
+msgstr "tarihten sonra"
+
+msgid "before date"
+msgstr "tarihten önce"
+
+msgid "between dates"
+msgstr "tarihler arasında"
+
+msgid "by"
+msgstr "tarafından"
+
+msgid "column expression"
+msgstr "sütun ifadesi"
+
+msgid "does not contain"
+msgstr "içermiyor"
+
+msgid "does not equal"
+msgstr "eşit değil"
+
+msgid "e.g. 0 0 12 * * ?"
+msgstr "örn. 0 0 12 * * ?"
+
+msgid "e.g. 100"
+msgstr "örn. 100"
+
+msgid "e.g. 123456789"
+msgstr "örn. 123456789"
+
+msgid "e.g. Low Inventory"
+msgstr "örn. Düşük Stok"
+
+msgid "e.g. api_key"
+msgstr "örn. api_key"
+
+msgid "e.g. john@example.com, henry@example.com"
+msgstr "örn. john@example.com, henry@example.com"
+
+msgid "e.g. order_count < 100"
+msgstr "örn. order_count < 100"
+
+msgid "eCommerce"
+msgstr "e-Ticaret"
+
+msgid "eg. Sales Data"
+msgstr "örn. Satış Verisi"
+
+msgid "eg. api_key"
+msgstr "örn. api_key"
+
+msgid "eg. country == 'India'"
+msgstr "örn. ülke == 'Hindistan'"
+
+msgid "eg. sales_data"
+msgstr "örn. sales_data"
+
+msgid "eg. schema1,schema2"
+msgstr "örn. schema1,schema2"
+
+msgid "ends with"
+msgstr "ile biter"
+
+msgid "formatted_api_key = f'token {api_key}:{api_secret}'"
+msgstr "formatted_api_key = f'token {api_key}:{api_secret}'"
+
+msgid "greater than"
+msgstr "büyüktür"
+
+msgid "greater than equal to"
+msgstr "büyük veya eşit"
+
+msgid "greater than or equals"
+msgstr "büyük veya eşit"
+
+msgid "i"
+msgstr "i"
+
+msgid "is empty"
+msgstr "boş"
+
+msgid "is last month"
+msgstr "geçen ay"
+
+msgid "is last week"
+msgstr "geçen hafta"
+
+msgid "is not"
+msgstr "değil"
+
+msgid "is not empty"
+msgstr "boş değil"
+
+msgid "is not set"
+msgstr "ayarlanmadı"
+
+msgid "is not supported yet. Remove this filter and add an expression filter instead."
+msgstr "henüz desteklenmiyor. Bu filtreyi kaldırın ve yerine bir ifade filtresi ekleyin."
+
+msgid "is set"
+msgstr "ayarlanmış"
+
+msgid "is this month"
+msgstr "bu ay"
+
+msgid "is this week"
+msgstr "bu hafta"
+
+msgid "is this year"
+msgstr "bu yıl"
+
+msgid "is today"
+msgstr "bugün"
+
+msgid "is tomorrow"
+msgstr "yarın"
+
+msgid "is yesterday"
+msgstr "dün"
+
+msgid "johndoe@mail.com"
+msgstr "johndoe@mail.com"
+
+msgid "join"
+msgstr "birleştir"
+
+msgid "less than"
+msgstr "küçüktür"
+
+msgid "less than or equals"
+msgstr "küçük veya eşit"
+
+msgid "not contains"
+msgstr "içermiyor"
+
+msgid "not equals"
+msgstr "eşit değil"
+
+msgid "not one of"
+msgstr "birinden değil"
+
+msgid "one of"
+msgstr "birinden"
+
+msgid "or drag and drop it here"
+msgstr "veya buraya sürükleyip bırakın"
+
+msgid "out of"
+msgstr "dışında"
+
+msgid "postgres://user:password@host:port/database"
+msgstr "postgres://kullanici:sifre@sunucu:port/veritabani"
+
+msgid "print(api_key)"
+msgstr "print(api_key)"
+
+msgid "rows"
+msgstr "satırlar"
+
+msgid "rows in"
+msgstr "satırlar içinde"
+
+msgid "seconds"
+msgstr "saniye"
+
+msgid "smaller than"
+msgstr "küçüktür"
+
+msgid "smaller than equal to"
+msgstr "küçük veya eşit"
+
+msgid "starts with"
+msgstr "ile başlar"
+
+msgid "table"
+msgstr "tablo"
+
+msgid "to"
+msgstr "-e/-a"
+
+msgid "{is_table ? 'table' : 'query'}"
+msgstr "{is_table ? 'tablo' : 'sorgu'}"
+
+msgid "{props.label}"
+msgstr "{props.label}"
+
+msgid "{props.row.title}"
+msgstr "{props.row.title}"
+
+msgid "{sort_order}"
+msgstr "{sort_order}"
+
+msgid "{workbook.views}"
+msgstr "{workbook.views}"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+## Auto-added late msgids from wrap-report on 2025-11-17T16:23:06
+msgid "30Â°"
+msgstr "30°"
+
+msgid "45Â°"
+msgstr "45°"
+
+msgid "60Â°"
+msgstr "60°"
+
+msgid "75Â°"
+msgstr "75°"
+
+msgid "90Â°"
+msgstr "90°"
+
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Execute (â+E)"
+msgstr "Çalıştır (⌘+E)"
+
+msgid "Insights v3 â¨"
+msgstr "Insights v3 ✨"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+# Auto-added by i18n_wrap.py on 2025-11-17T16:23:23
+msgid "30Â°"
+msgstr "30°"
+
+msgid "45Â°"
+msgstr "45°"
+
+msgid "60Â°"
+msgstr "60°"
+
+msgid "75Â°"
+msgstr "75°"
+
+msgid "90Â°"
+msgstr "90°"
+
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Execute (â+E)"
+msgstr "Çalıştır (⌘+E)"
+
+msgid "Insights v3 â¨"
+msgstr "Insights v3 ✨"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+# Auto-added by i18n_wrap.py on 2025-11-17T16:55:42
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Are you sure you want to import this chart?"
+msgstr "Bu grafiği içe aktarmak istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to import this query?"
+msgstr "Bu sorguyu içe aktarmak istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to import this workbook?"
+msgstr "Bu çalışma kitabını içe aktarmak istediğinizden emin misiniz?"
+
+msgid "Chart imported successfully"
+msgstr "Grafik başarıyla içe aktarıldı"
+
+msgid "Create a dashboard in your workbook to view it here."
+msgstr "Burada görüntülemek için çalışma kitabınızda bir gösterge tablosu oluşturun."
+
+msgid "No Dashboards"
+msgstr "Gösterge Tablosu Yok"
+
+msgid "No charts"
+msgstr "Grafik yok"
+
+msgid "No dashboards"
+msgstr "Gösterge tablosu yok"
+
+msgid "No dashboards found."
+msgstr "Gösterge tablosu bulunamadı."
+
+msgid "Query imported successfully"
+msgstr "Sorgu başarıyla içe aktarıldı"
+
+msgid "Select an interface to start"
+msgstr "Başlamak için bir arayüz seçin"
+
+msgid "Workbook imported successfully"
+msgstr "Çalışma kitabı başarıyla içe aktarıldı"
+
+msgid "query"
+msgstr "sorgu"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+# Auto-added by i18n_wrap.py on 2025-11-17T17:01:40
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Refresh Chart"
+msgstr "Grafiği Yenile"
+
+msgid "Reset Options"
+msgstr "Seçenekleri Sıfırla"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+# Auto-added by i18n_wrap.py on 2025-11-18T08:59:56
+msgid "Add Sort"
+msgstr "Sıralama Ekle"
+
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "Empty - Click 'Add Filter' to add a filter"
+msgstr "Boş - Filtre eklemek için 'Filtre Ekle'ye tıklayın"
+
+msgid "Load 50 More"
+msgstr "50 tane daha yükle"
+
+msgid "No tables found"
+msgstr "Tablo bulunamadı"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+# Auto-added by i18n_wrap.py on 2025-11-18T09:13:06
+msgid "All set! ð"
+msgstr "Her şey hazır! 🎉"
+
+msgid "â¢â¢â¢â¢â¢"
+msgstr "•••••"
+
+
+msgid "Team created"
+msgstr "Takım oluşturuldu"
+
+msgid "Team updated"
+msgstr "Takım güncellendi"
+
+msgid "Are you sure you want to login to your Frappe Cloud dashboard?"
+msgstr "Frappe Cloud kontrol panelinize giriş yapmak istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to log out?"
+msgstr "Oturumu kapatmak istediğinizden emin misiniz?"
+
+msgid "Your settings have been updated successfully"
+msgstr "Ayarlarınız başarıyla güncellendi"
+
+msgid "User updated successfully"
+msgstr "Kullanıcı başarıyla güncellendi"
+
+
+msgid "Invitation Expired"
+msgstr "Davet süresi doldu"
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "All set! 🎉"
+msgstr "Her şey hazır! 🎉"
+
+msgid "•••••"
+msgstr "•••••"
+
+
+msgid "This team does not have any members"
+msgstr "Bu takımın henüz üyesi yok"
+
+msgid "Admin team has access to all the data sources and tables. Members of this team are allowed to manage teams, users, and other admin settings"
+msgstr "Yönetici takımı, tüm veri kaynaklarına ve tablolara erişebilir. Bu takımın üyeleri takımları, kullanıcıları ve diğer yönetici ayarlarını yönetebilir"
+
+
+msgid "You have been invited to use Insights"
+msgstr "Insights kullanmaya davet edildiniz"
+
+msgid "Accept Invitation"
+msgstr "Daveti Kabul Et"
+
+msgid "Invitation"
+msgstr "Davet"
+
+
+msgid "Change Logo"
+msgstr "Logoyu Değiştir"
+
+msgid "Click “Change Logo” to upload a custom image."
+msgstr "Özel bir görsel yüklemek için \"Logoyu Değiştir\" düğmesine tıklayın."
+
+msgid "Collapse"
+msgstr "Daralt"
+
+msgid "Expand"
+msgstr "Genişlet"
+
+msgid "Insights"
+msgstr "Insights"
+
+msgid "Set the start of the fiscal year for the organization. This will be used to calculate quarterly and yearly data."
+msgstr "Kuruluş için mali yılın başlangıcını ayarlayın. Bu değer üç aylık ve yıllık verileri hesaplamak için kullanılacaktır."

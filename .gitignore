@@ -3,6 +3,8 @@
 *.comp.js
 *.DS_Store
 locale
+!insights/locale/
+!insights/locale/*.po
 .wnf-lang-status
 *.swp
 *.egg-info
