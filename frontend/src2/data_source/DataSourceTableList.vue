@@ -7,6 +7,7 @@ import useDataSourceStore from './data_source'
 import useTableStore, { DataSourceTable } from './tables'
 import { __ } from '@/translation'
 import { call } from 'frappe-ui'
+import { showErrorToast } from '../helpers'
 const props = defineProps<{ name: string }>()
 
 const dataSource = useDataSourceStore().getSource(props.name)
@@ -36,11 +37,15 @@ async function deleteSelectedUploads() {
 	if (dataSource?.name !== 'uploads') {
 		return
 	}
-	await call('insights.api.delete_upload_tables', {
-		tables: selectedTableNames.value,
-	})
-	await updateTablesList()
-	selectedTableNames.value = []
+	try {
+		await call('insights.api.delete_upload_tables', {
+			tables: selectedTableNames.value,
+		})
+		await updateTablesList()
+		selectedTableNames.value = []
+	} catch (e) {
+		showErrorToast(e as Error)
+	}
 }
 
 const listOptions = ref({

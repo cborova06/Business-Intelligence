@@ -18,6 +18,7 @@ from insights.insights.doctype.insights_team.insights_team import (
     get_permission_filter,
 )
 from insights.utils import InsightsTable, detect_encoding
+from frappe.exceptions import DoesNotExistError
 
 
 @insights_whitelist()
@@ -375,8 +376,25 @@ def get_data_source_table_columns(data_source: str, table_name: str):
 @insights_whitelist()
 @validate_type
 def update_data_source_tables(data_source: str):
+    """Refresh table list for a v3 data source.
+
+    In some environments (e.g. fresh sites without a matching Insights Data
+    Source v3 record yet), this endpoint used to raise DoesNotExistError.
+    Instead, we treat missing data sources as a no-op so the UI can safely
+    show an empty list without crashing.
+    """
     check_data_source_permission(data_source)
-    ds = frappe.get_doc("Insights Data Source v3", data_source)
+
+    if not frappe.db.exists("Insights Data Source v3", data_source):
+        # Nothing to refresh; safe to return without error.
+        return
+
+    try:
+        ds = frappe.get_doc("Insights Data Source v3", data_source)
+    except DoesNotExistError:
+        # Race condition or manually deleted record; treat as no-op.
+        return
+
     ds.update_table_list()
 
 
