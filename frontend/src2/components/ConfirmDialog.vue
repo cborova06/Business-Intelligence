@@ -16,14 +16,16 @@
 		</template>
 		<template #actions>
 			<div class="flex items-center justify-end space-x-2">
-				<Button @click="show = false">Cancel</Button>
+				<Button @click="show = false">
+					{{ __('Cancel') }}
+				</Button>
 				<Button
 					variant="solid"
 					:theme="$props.theme"
 					@click="onConfirm"
 					:loading="isLoading"
 				>
-					{{ primaryActionLabel || 'Confirm' }}
+					{{ primaryActionLabel || __('Confirm') }}
 				</Button>
 			</div>
 		</template>
@@ -31,6 +33,7 @@
 </template>
 <script>
 import { ErrorMessage, FormControl } from 'frappe-ui'
+import { __ } from '@/translation'
 
 export default {
 	name: 'ConfirmDialog',
