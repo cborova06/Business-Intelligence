@@ -376,7 +376,7 @@ function getYAxis(options: YAxisCustomizeOptions = {}) {
 		nameLocation: 'middle',
 		// For vertical Y axis, rotate label so it reads top-to-bottom
 		nameRotate: 90,
-		nameGap: 45,
+		nameGap: 35,
 		nameTextStyle: showName
 			? {
 					fontSize: 12,
