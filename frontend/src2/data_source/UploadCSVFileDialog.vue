@@ -3,11 +3,14 @@ import { FileUploader, call } from 'frappe-ui'
 import { FileUp } from 'lucide-vue-next'
 import { computed, reactive, ref } from 'vue'
 import DataTable from '../components/DataTable.vue'
+import useDataSourceStore from './data_source'
 import { QueryResultColumn, QueryResultRow } from '../types/query.types'
 import { createToast } from '../helpers/toasts'
 import { __ } from "@/translation";
 
 const show = defineModel()
+
+const dataSourceStore = useDataSourceStore()
 
 const fileUploaded = ref(false)
 const csvData = reactive({
@@ -59,6 +62,7 @@ function importCSVData() {
 		filename: csvData.file.name,
 	})
 		.then(() => {
+			dataSourceStore.getSources()
 			createToast({
 				title: __('Table Imported'),
 				message: `Table '${csvData.tablename}' imported successfully`,

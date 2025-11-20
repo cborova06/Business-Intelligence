@@ -11,6 +11,9 @@ from frappe.rate_limiter import rate_limit
 
 from insights.api.shared import is_public
 from insights.decorators import insights_whitelist, validate_type
+from insights.insights.doctype.insights_table_v3.insights_table_v3 import (
+    InsightsTablev3,
+)
 from insights.insights.doctype.insights_data_source_v3.connectors.duckdb import (
     get_duckdb_connection,
 )

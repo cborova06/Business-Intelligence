@@ -176,7 +176,8 @@ export function makeQuery(name: string) {
 				result.value.lastExecutedAt = new Date()
 			})
 			.catch(() => {
-				result.value = { ...EMPTY_RESULT }
+				// Keep the last successful result visible; error details
+				// are surfaced via showErrorToast in the underlying call.
 			})
 			.finally(() => {
 				executing.value = false

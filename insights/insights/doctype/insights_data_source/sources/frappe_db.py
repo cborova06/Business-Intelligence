@@ -32,6 +32,19 @@ class FrappeTableFactory:
             table.table_links = self.get_table_links(table.label)
             create_insights_table(table, force=force)
 
+    def get_table_columns(self, table):
+        """Return column metadata for a single table.
+
+        This mirrors the structure used in `sync_tables`, but for a
+        single table name. It is used by FrappeDB.get_table_columns.
+        """
+        if not getattr(self, "db_conn", None):
+            # No active connection; nothing to return.
+            return []
+
+        columns_by_tables = self.get_columns_by_tables([table])
+        return columns_by_tables.get(table, [])
+
     def get_columns_by_tables(self, tablenames=None):
         t = Table(
             "columns",
