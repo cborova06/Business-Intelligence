@@ -64,7 +64,12 @@ export function getLineChartOptions(config: LineChartConfig, result: QueryResult
 		? getGranularity(config.x_axis.dimension.dimension_name, config)
 		: null
 
-	const leftYAxis = getYAxis({ min: config.y_axis.min, max: config.y_axis.max })
+	const leftYAxis = getYAxis({
+		min: config.y_axis.min,
+		max: config.y_axis.max,
+		axis_label: config.y_axis.axis_label,
+		show_axis_label: config.y_axis.show_axis_label,
+	})
 	const rightYAxis = getYAxis()
 	const hasRightAxis = config.y_axis.series.some((s) => s.align === 'Right')
 	const yAxis = !hasRightAxis ? [leftYAxis] : [leftYAxis, rightYAxis]
@@ -184,6 +189,8 @@ export function getBarChartOptions(config: BarChartConfig, result: QueryResult, 
 		normalized: config.y_axis.normalize,
 		min: config.y_axis.min,
 		max: config.y_axis.max,
+		axis_label: config.y_axis.axis_label,
+		show_axis_label: config.y_axis.show_axis_label,
 	})
 	const rightYAxis = getYAxis({ normalized: config.y_axis.normalize })
 	const hasRightAxis = config.y_axis.series.some((s) => s.align === 'Right')
@@ -334,8 +341,11 @@ type YAxisCustomizeOptions = {
 	normalized?: boolean
 	min?: number
 	max?: number
+	axis_label?: string
+	show_axis_label?: boolean
 }
 function getYAxis(options: YAxisCustomizeOptions = {}) {
+	const showName = options.show_axis_label && options.axis_label
 	return {
 		show: true,
 		type: 'value',
@@ -352,6 +362,15 @@ function getYAxis(options: YAxisCustomizeOptions = {}) {
 			margin: 8,
 			formatter: (value: number) => getShortNumber(value, 1),
 		},
+		name: showName ? options.axis_label : undefined,
+		nameLocation: 'middle',
+		nameGap: 50,
+		nameTextStyle: showName
+			? {
+					fontSize: 12,
+					color: '#6b7280',
+			  }
+			: undefined,
 		min: options.normalized ? 0 : options.min || undefined,
 		max: options.normalized ? 100 : options.max || undefined,
 	}
