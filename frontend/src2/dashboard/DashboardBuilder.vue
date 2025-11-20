@@ -104,7 +104,7 @@ const verticalCompact = useStorage('dashboard_vertical_compact', true)
 						icon-left="plus"
 						@click="showChartSelectorDialog = true"
 					>
-						Chart
+						{{ __('Chart') }}
 					</Button>
 					<Button
 						v-if="dashboard.editing"
@@ -112,7 +112,7 @@ const verticalCompact = useStorage('dashboard_vertical_compact', true)
 						icon-left="plus"
 						@click="() => dashboard.addFilter()"
 					>
-						Filter
+						{{ __('Filter') }}
 					</Button>
 					<Button
 						v-if="dashboard.editing"
@@ -120,7 +120,7 @@ const verticalCompact = useStorage('dashboard_vertical_compact', true)
 						icon-left="plus"
 						@click="() => dashboard.addText()"
 					>
-						Text
+						{{ __('Text') }}
 					</Button>
 					<Button
 						v-if="dashboard.editing"
@@ -133,7 +133,7 @@ const verticalCompact = useStorage('dashboard_vertical_compact', true)
 							}
 						"
 					>
-						Done
+						{{ __('Done') }}
 					</Button>
 					<Dropdown
 						:button="{ icon: 'more-horizontal', variant: 'outline' }"

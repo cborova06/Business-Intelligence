@@ -3,7 +3,7 @@ import { TextEditor } from 'frappe-ui'
 import { inject, ref, unref } from 'vue'
 import { WorkbookDashboardText } from '../types/workbook.types'
 import { Dashboard } from './dashboard'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const dashboard = inject<Dashboard>('dashboard')!
 const props = defineProps<{ item: WorkbookDashboardText }>()
 
@@ -20,10 +20,10 @@ const editedText = ref(unref(props.item.text))
 		:modelValue="dashboard.isEditingItem(props.item)"
 		@update:modelValue="!$event ? (dashboard.editingItemIndex = null) : true"
 		:options="{
-			title: 'Edit Text',
+			title: __('Edit Text'),
 			actions: [
 				{
-					label: 'Save',
+					label: __('Save'),
 					variant: 'solid',
 					disabled:
 						!editedText || editedText.trim() === '' || editedText === props.item.text,
@@ -33,7 +33,7 @@ const editedText = ref(unref(props.item.text))
 					},
 				},
 				{
-					label: 'Cancel',
+					label: __('Cancel'),
 					onClick: () => (dashboard.editingItemIndex = null),
 				},
 			],

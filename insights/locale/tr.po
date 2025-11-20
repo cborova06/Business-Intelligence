@@ -3140,3 +3140,9 @@ msgstr "{{ rows }} - Sorgunun sonucu"
 
 msgid "{{ count }} - The number of rows in the query"
 msgstr "{{ count }} - Sorgudaki satır sayısı"
+
+msgid "No rows selected"
+msgstr "Seçili satır yok"
+
+msgid "No values selected"
+msgstr "Seçili değer yok"
