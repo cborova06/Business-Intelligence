@@ -336,7 +336,7 @@ function getXAxis(x_axis: XAxis) {
 		},
 		name: showName ? x_axis.axis_label : undefined,
 		nameLocation: 'middle',
-		nameGap: 30,
+		nameGap: 32,
 		nameTextStyle: showName
 			? {
 					fontSize: 12,
@@ -374,9 +374,9 @@ function getYAxis(options: YAxisCustomizeOptions = {}) {
 		},
 		name: showName ? options.axis_label : undefined,
 		nameLocation: 'middle',
-		// For vertical Y axis, rotate label so it reads top-to-bottom
+		// Keep Y-axis label horizontal for better readability
 		nameRotate: 90,
-		nameGap: 35,
+		nameGap: 50,
 		nameTextStyle: showName
 			? {
 					fontSize: 12,
@@ -843,14 +843,17 @@ export function getMapChartOptions(config: MapChartConfig, result: QueryResult) 
 }
 
 function getGrid(options: any = {}) {
-	let bottom = options.show_legend ? 36 : 22;
+	// Increase bottom padding so X-axis labels and axis title
+	// have more room and are not clipped.
+	let bottom = options.show_legend ? 44 : 32;
 	if (options.show_scrollbar && !options.swapAxes) {
 		bottom += 30;
 	}
 
 	return {
 		top: 18,
-		left: 30,
+		// Extra left padding so horizontal Y-axis label fits nicely
+		left: 56,
 		right: 30,
 		bottom: bottom,
 		containLabel: true,
