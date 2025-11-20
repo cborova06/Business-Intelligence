@@ -92,7 +92,7 @@ function resetFile() {
 	<Dialog
 		v-model="show"
 		:options="{
-			title: csvData.tablename ? 'Import Table' : 'Upload CSV/Excel File',
+			title: csvData.tablename ? __('Import Table') : __('Upload CSV/Excel File'),
 			size: fileUploaded ? '4xl' : '',
 		}"
 	>
@@ -156,14 +156,16 @@ function resetFile() {
 			</div>
 			<div class="mt-4 flex justify-between pt-2">
 				<div class="ml-auto flex items-center space-x-2">
-					<Button :disabled="!fileUploaded" @click="resetFile"> Reset File </Button>
+					<Button :disabled="!fileUploaded" @click="resetFile">
+						{{ __('Reset File') }}
+					</Button>
 					<Button
 						variant="solid"
 						:disabled="importDisabled"
 						:loading="importing"
 						@click="importCSVData"
 					>
-						Import
+						{{ __('Import') }}
 					</Button>
 				</div>
 			</div>

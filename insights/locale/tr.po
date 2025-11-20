@@ -2473,6 +2473,21 @@ msgstr "Tür"
 msgid "Type your query here"
 msgstr "Sorgunuzu buraya yazın"
 
+msgid "Hide"
+msgstr "Gizle"
+
+msgid "Edit Filters"
+msgstr "Filtreleri Düzenle"
+
+msgid "Set Filters"
+msgstr "Filtreleri Ayarla"
+
+msgid "Reset File"
+msgstr "Dosyayı Sıfırla"
+
+msgid "Upload CSV/Excel File"
+msgstr "CSV/Excel Dosyası Yükle"
+
 msgid "Unable to find a relationship"
 msgstr "Bir ilişki bulunamadı"
 

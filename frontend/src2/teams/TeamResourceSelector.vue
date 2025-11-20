@@ -188,6 +188,7 @@ function selectTable(dataSource: string, table: string, selected: boolean) {
 
 const expandedTable = ref<string | null>(null)
 const expandedTableColumns = ref<ColumnOption[]>([])
+const tableRestrictionPlaceholder = "eg. country == 'India'"
 wheneverChanges(
 	() => [expandedDataSource.value, expandedTable.value],
 	() => {
@@ -326,22 +327,22 @@ function getVisibleTableLimit(dataSource: string) {
 							>
 								{{
 									expandedTable === table.name
-										? 'Hide'
+										? __('Hide')
 										: tableRestrictions[table.name]
-										? 'Edit Filters'
-										: 'Set Filters'
+										? __('Edit Filters')
+										: __('Set Filters')
 								}}
 							</p>
 						</div>
 					</div>
-					<div v-if="expandedTable === table.name" class="ml-6 flex flex-col gap-1.5">
-						<ExpressionEditor
-							:column-options="expandedTableColumns"
-							v-model="tableRestrictions[table.name]"
-							placeholder="eg. country == 'India'"
-							class="h-fit max-h-[10rem] min-h-[2.5rem] text-sm"
-						/>
-					</div>
+						<div v-if="expandedTable === table.name" class="ml-6 flex flex-col gap-1.5">
+							<ExpressionEditor
+								:column-options="expandedTableColumns"
+								v-model="tableRestrictions[table.name]"
+								:placeholder="__(tableRestrictionPlaceholder)"
+								class="h-fit max-h-[10rem] min-h-[2.5rem] text-sm"
+							/>
+						</div>
 				</div>
 			</div>
 			<div
