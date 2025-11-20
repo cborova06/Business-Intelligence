@@ -190,6 +190,53 @@ def import_csv_data(filename: str):
     InsightsTablev3.bulk_create(ds.name, [table_name])
 
 
+@insights_whitelist()
+def delete_upload_tables(tables: list[str]):
+    """Delete one or more tables from the uploads data source (DuckDB + metadata).
+
+    This is used by the File Uploads UI in Insights v3 to remove ad-hoc
+    CSV/XLSX imports. It only operates on the dedicated \"uploads\" data source.
+    """
+    check_data_source_permission("uploads")
+
+    if not tables:
+        return
+
+    if not frappe.db.exists("Insights Data Source v3", "uploads"):
+        return
+
+    ds = frappe.get_doc("Insights Data Source v3", "uploads")
+    db = get_duckdb_connection(ds, read_only=False)
+
+    try:
+        for table_name in tables:
+            try:
+                # Use raw SQL to be robust even if backend API changes
+                db.raw_sql(f'DROP TABLE IF EXISTS "{table_name}"')
+            except Exception as e:  # pragma: no cover - best-effort cleanup
+                frappe.log_error(
+                    title="Failed to drop uploads table",
+                    message=f"{table_name}: {e}",
+                )
+    finally:
+        db.disconnect()
+
+    # Remove metadata rows from Insights Table v3
+    docnames = frappe.get_all(
+        "Insights Table v3",
+        filters={"data_source": ds.name, "table": ["in", tables]},
+        pluck="name",
+    )
+    for name in docnames:
+        try:
+            frappe.delete_doc("Insights Table v3", name, ignore_permissions=True)
+        except Exception as e:  # pragma: no cover
+            frappe.log_error(
+                title="Failed to delete Insights Table v3 row for uploads table",
+                message=f"{name}: {e}",
+            )
+
+
 @frappe.whitelist(allow_guest=True)
 @validate_type
 def get_doc(doctype: str, name: str | int):

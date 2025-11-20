@@ -5,7 +5,8 @@ import { MoreHorizontal, RefreshCcw, SearchIcon } from 'lucide-vue-next'
 import { h, ref, watchEffect } from 'vue'
 import useDataSourceStore from './data_source'
 import useTableStore, { DataSourceTable } from './tables'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
+import { call } from 'frappe-ui'
 const props = defineProps<{ name: string }>()
 
 const dataSource = useDataSourceStore().getSource(props.name)
@@ -21,6 +22,27 @@ function updateTablesList() {
 	})
 }
 
+const selectedTableNames = ref<string[]>([])
+
+function handleSelectionsUpdate(selections: Set<string>) {
+	selectedTableNames.value = Array.from(selections || [])
+}
+
+async function deleteSelectedUploads() {
+	if (!selectedTableNames.value.length) {
+		return
+	}
+	// Only allow bulk delete for uploads data source
+	if (dataSource?.name !== 'uploads') {
+		return
+	}
+	await call('insights.api.delete_upload_tables', {
+		tables: selectedTableNames.value,
+	})
+	await updateTablesList()
+	selectedTableNames.value = []
+}
+
 const listOptions = ref({
 	columns: [
 		{
@@ -32,6 +54,7 @@ const listOptions = ref({
 	rowKey: 'table_name',
 	options: {
 		showTooltip: false,
+		deleteSelections: deleteSelectedUploads,
 		getRowRoute: (table: DataSourceTable) => ({
 			path: `/data-source/${props.name}/${table.table_name}`,
 		}),
