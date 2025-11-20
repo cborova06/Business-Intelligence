@@ -2584,6 +2584,15 @@ msgstr "Kullanıcı Güncellendi"
 msgid "Username"
 msgstr "Kullanıcı Adı"
 
+msgid "Invalid Expression"
+msgstr "Geçersiz İfade"
+
+msgid "Column '{0}' is not defined in this query. Available columns: {1}"
+msgstr "Bu sorguda '{0}' adında bir sütun tanımlı değil. Kullanılabilir sütunlar: {1}"
+
+msgid "Invalid expression: {0}"
+msgstr "Geçersiz ifade: {0}"
+
 msgid "Users"
 msgstr "Kullanıcılar"
 

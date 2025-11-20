@@ -1,4 +1,5 @@
 import ast
+import re
 import time
 from datetime import date
 
@@ -10,7 +11,6 @@ import sqlglot as sg
 import sqlparse
 from frappe.utils.data import flt
 from frappe.utils.safe_exec import safe_eval, safe_exec
-from ibis import _
 from ibis.expr.datatypes import DataType
 from ibis.expr.operations.relations import DatabaseTable, Field
 from ibis.expr.types import Expr
@@ -632,8 +632,27 @@ class IbisQueryBuilder:
         context.update(self.get_current_columns())
         context.update(get_functions())
         context.update(additonal_context or {})
-        ret = exec_with_return(expression, context)
-        frappe.flags.current_ibis_query = None
+        try:
+            ret = exec_with_return(expression, context)
+        except NameError as e:
+            # Typically raised when a referenced column/variable does not exist.
+            # Example: "name 'Price' is not defined"
+            missing_name = None
+            m = re.search(r"name '([^']+)' is not defined", str(e))
+            if m:
+                missing_name = m.group(1)
+
+            available_columns = sorted(self.get_current_columns().keys())
+            if missing_name:
+                msg = frappe._(
+                    "Column '{0}' is not defined in this query. Available columns: {1}"
+                ).format(missing_name, ", ".join(available_columns))
+            else:
+                msg = frappe._("Invalid expression: {0}").format(str(e))
+
+            frappe.throw(msg, title=frappe._("Invalid Expression"))
+        finally:
+            frappe.flags.current_ibis_query = None
         return ret
 
     def get_current_columns(self):
