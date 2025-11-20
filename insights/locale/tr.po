@@ -1432,6 +1432,9 @@ msgstr "Çıkış yap"
 msgid "Login to Frappe Cloud"
 msgstr "Frappe Cloud'a Giriş Yap"
 
+msgid "Native Query"
+msgstr "Native Sorgu"
+
 msgid "Login to Frappe Cloud?"
 msgstr "Frappe Cloud'a Giriş Yapılsın mı?"
 

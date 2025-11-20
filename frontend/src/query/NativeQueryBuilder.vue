@@ -15,7 +15,7 @@ const displayedRowCount = computed(() => Math.min(query.MAX_ROWS, queriedRowCoun
 <template>
 	<div class="flex h-full w-full flex-col pt-2">
 		<div class="flex-shrink-0 uppercase leading-7 tracking-wide text-gray-600">
-			Native Query
+			{{ __('Native Query') }}
 		</div>
 		<div class="flex flex-1 flex-shrink-0 overflow-hidden rounded border">
 			<NativeQueryEditor />
