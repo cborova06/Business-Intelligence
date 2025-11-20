@@ -3071,3 +3071,72 @@ msgstr "Insights"
 
 msgid "Set the start of the fiscal year for the organization. This will be used to calculate quarterly and yearly data."
 msgstr "Kuruluş için mali yılın başlangıcını ayarlayın. Bu değer üç aylık ve yıllık verileri hesaplamak için kullanılacaktır."
+
+msgid "Alert Created"
+msgstr "Uyarı Oluşturuldu"
+
+msgid "Alert Updated"
+msgstr "Uyarı Güncellendi"
+
+msgid "Alert Disabled"
+msgstr "Uyarı Devre Dışı Bırakıldı"
+
+msgid "Alert Enabled"
+msgstr "Uyarı Etkinleştirildi"
+
+msgid "Alert \"{0}\" has been created."
+msgstr "\"{0}\" uyarısı oluşturuldu."
+
+msgid "Alert \"{0}\" has been updated."
+msgstr "\"{0}\" uyarısı güncellendi."
+
+msgid "Alert \"{0}\" has been disabled."
+msgstr "\"{0}\" uyarısı devre dışı bırakıldı."
+
+msgid "Alert \"{0}\" has been enabled."
+msgstr "\"{0}\" uyarısı etkinleştirildi."
+
+msgid "Alert \"{0}\" has been sent."
+msgstr "\"{0}\" uyarısı gönderildi."
+
+msgid "Send alert when"
+msgstr "Uyarıyı şu durumda gönder"
+
+msgid "Create Alert"
+msgstr "Uyarı Oluştur"
+
+msgid "Update Alert"
+msgstr "Uyarıyı Güncelle"
+
+msgid "Enable Alert"
+msgstr "Uyarıyı Etkinleştir"
+
+msgid "Disable Alert"
+msgstr "Uyarıyı Devre Dışı Bırak"
+
+msgid "Telegram"
+msgstr "Telegram"
+
+msgid "You can use markdown to format the message. Use double asterisks (**) for bold text. You can use the following fields in the message:"
+msgstr "Mesajı biçimlendirmek için markdown kullanabilirsiniz. Kalın metin için çift yıldız (**) kullanın. Mesaj içinde aşağıdaki alanları kullanabilirsiniz:"
+
+msgid ""
+"e.g.\n"
+"Hey,\n"
+"We have **low inventory** for **{{ title }}**.\n"
+"Please order more.\n"
+"Thanks,\n"
+"\t\t\t\t\t\t"
+msgstr ""
+"örn.\n"
+"Merhaba,\n"
+"**{{ title }}** için **düşük stok** bulunuyor.\n"
+"Lütfen yeniden sipariş verin.\n"
+"Teşekkürler,\n"
+"\t\t\t\t\t\t"
+
+msgid "{{ rows }} - The result of the query"
+msgstr "{{ rows }} - Sorgunun sonucu"
+
+msgid "{{ count }} - The number of rows in the query"
+msgstr "{{ count }} - Sorgudaki satır sayısı"

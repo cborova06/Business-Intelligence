@@ -7,11 +7,17 @@ import { createToast } from '../../helpers/toasts'
 import useAlertStore from '../alert'
 import { Query } from '../query'
 import ExpressionEditor from './ExpressionEditor.vue'
-import { __ } from "@/translation";
+import { __ } from '@/translation'
 const props = defineProps<{ query: Query; alert_name: string }>()
 const show = defineModel()
 
 const alert = useAlertStore().getAlert(props.alert_name)
+
+const defaultAlertMessagePlaceholder =
+	"e.g.\nHey,\nWe have **low inventory** for **{{ title }}**.\nPlease order more.\nThanks,\n\t\t\t\t\t\t"
+
+const alertRowsHint = '{{ rows }} - The result of the query'
+const alertCountHint = '{{ count }} - The number of rows in the query'
 
 const filterCondition = reactive({
 	left: '',
@@ -66,8 +72,10 @@ function updateAlert() {
 	alert.doc.disabled = 0
 	return alert.save().then(() => {
 		createToast({
-			title: isNew ? 'Alert Created' : 'Alert Updated',
-			message: `Alert "${alert.doc.title}" has been ${isNew ? 'created' : 'updated'}.`,
+			title: isNew ? __('Alert Created') : __('Alert Updated'),
+			message: isNew
+				? __('Alert "{0}" has been created.').replace('{0}', alert.doc.title)
+				: __('Alert "{0}" has been updated.').replace('{0}', alert.doc.title),
 			variant: 'success',
 		})
 		show.value = false
@@ -82,7 +90,7 @@ function testSendAlert() {
 	return alert.call('test_alert').then(() => {
 		createToast({
 			title: __('Alert Sent'),
-			message: `Alert "${alert.doc.title}" has been sent.`,
+			message: __('Alert "{0}" has been sent.').replace('{0}', alert.doc.title),
 			variant: 'success',
 		})
 	})
@@ -92,10 +100,10 @@ function toggleAlert() {
 	alert.doc.disabled = alert.doc.disabled ? 0 : 1
 	return alert.save().then(() => {
 		createToast({
-			title: alert.doc.disabled ? 'Alert Disabled' : 'Alert Enabled',
-			message: `Alert "${alert.doc.title}" has been ${
-				alert.doc.disabled ? 'disabled' : 'enabled'
-			}.`,
+			title: alert.doc.disabled ? __('Alert Disabled') : __('Alert Enabled'),
+			message: alert.doc.disabled
+				? __('Alert "{0}" has been disabled.').replace('{0}', alert.doc.title)
+				: __('Alert "{0}" has been enabled.').replace('{0}', alert.doc.title),
 			variant: 'success',
 		})
 	})
@@ -107,23 +115,23 @@ function toggleAlert() {
 		v-model="show"
 		:disableOutsideClickToClose="alert.isdirty || alert.islocal"
 		:options="{
-			title: 'Setup Alert',
+			title: __('Setup Alert'),
 			size: '2xl',
 			actions: [
 				{
-					label: 'Send Test Alert',
+					label: __('Send Test Alert'),
 					disabled: !isValidAlert || alert.loading || alert.saving,
 					loading: alert.loading,
 					onClick: testSendAlert,
 				},
 				{
-					label: alert.doc.disabled ? 'Enable Alert' : 'Disable Alert',
+					label: alert.doc.disabled ? __('Enable Alert') : __('Disable Alert'),
 					disabled: alert.loading || alert.saving,
 					loading: alert.loading,
 					onClick: toggleAlert,
 				},
 				{
-					label: alert.islocal ? 'Create Alert' : 'Update Alert',
+					label: alert.islocal ? __('Create Alert') : __('Update Alert'),
 					variant: 'solid',
 					disabled: !isValidAlert || !alert.isdirty || alert.saving || alert.loading,
 					loading: alert.saving,
@@ -147,11 +155,11 @@ function toggleAlert() {
 							:label="__('Frequency')"
 							v-model="alert.doc.frequency"
 							:options="[
-								{ value: 'Hourly', label: 'Check once an hour' },
-								{ value: 'Daily', label: 'Check once a day' },
-								{ value: 'Weekly', label: 'Check once a week' },
-								{ value: 'Monthly', label: 'Check once a month' },
-								{ value: 'Cron', label: 'Cron' },
+								{ value: 'Hourly', label: __('Check once an hour') },
+								{ value: 'Daily', label: __('Check once a day') },
+								{ value: 'Weekly', label: __('Check once a week') },
+								{ value: 'Monthly', label: __('Check once a month') },
+								{ value: 'Cron', label: __('Cron') },
 							]"
 						/>
 						<FormControl
@@ -168,8 +176,8 @@ function toggleAlert() {
 							:label="__('Channel')"
 							v-model="alert.doc.channel"
 							:options="[
-								{ label: 'Email', value: 'Email' },
-								// { label: 'Telegram', value: 'Telegram' },
+								{ label: __('Email'), value: 'Email' },
+								// { label: __('Telegram'), value: 'Telegram' },
 							]"
 						/>
 						<FormControl
@@ -190,7 +198,9 @@ function toggleAlert() {
 				</div>
 
 				<div class="flex flex-col">
-					<label class="mb-1.5 block text-xs text-ink-gray-5">Send alert when</label>
+					<label class="mb-1.5 block text-xs text-ink-gray-5">
+						{{ __('Send alert when') }}
+					</label>
 					<div class="flex gap-4" v-if="!alert.doc.custom_condition">
 						<FormControl
 							type="select"
@@ -233,26 +243,18 @@ function toggleAlert() {
 						:label="__('Message')"
 						class="min-h-40 text-p-sm"
 						v-model="alert.doc.message"
-						:placeholder="`e.g.
-Hey,
-We have **low inventory** for **{{ title }}**.
-Please order more.
-Thanks,
-						`"
+						:placeholder="__(defaultAlertMessagePlaceholder)"
 					/>
 
 					<div class="mt-2 text-p-sm text-gray-600">
-						You can use markdown to format the message. Use double asterisks (**) for
-						bold text. You can use the following fields in the message:
+						{{ __(
+							'You can use markdown to format the message. Use double asterisks (**) for bold text. You can use the following fields in the message:'
+						) }}
 
-						<div
-							v-html="
-								`<ul class='list-disc pl-4'>
-							<li>{{ rows }} - The result of the query</li>
-							<li>{{ count }} - The number of rows in the query</li>
-						</ul>`
-							"
-						/>
+						<ul class="list-disc pl-4">
+							<li>{{ __(alertRowsHint) }}</li>
+							<li>{{ __(alertCountHint) }}</li>
+						</ul>
 					</div>
 				</div>
 			</div>
