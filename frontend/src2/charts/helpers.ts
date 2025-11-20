@@ -316,6 +316,7 @@ function getXAxis(x_axis: XAxis) {
 	const columnType = x_axis.dimension.data_type
 	const xAxisIsDate = columnType && FIELDTYPES.DATE.includes(columnType)
 	const rotation = Math.min(Math.max(x_axis.label_rotation || 0, 0), 90)
+	const showName = x_axis.show_axis_label && x_axis.axis_label
 
 	return {
 		type: xAxisIsDate ? 'time' : 'category',
@@ -333,6 +334,15 @@ function getXAxis(x_axis: XAxis) {
 			overflow: 'truncate',
 			ellipsis: '...',
 		},
+		name: showName ? x_axis.axis_label : undefined,
+		nameLocation: 'middle',
+		nameGap: 30,
+		nameTextStyle: showName
+			? {
+					fontSize: 12,
+					color: '#6b7280',
+			  }
+			: undefined,
 	}
 }
 

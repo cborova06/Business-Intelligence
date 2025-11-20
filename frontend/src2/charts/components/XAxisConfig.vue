@@ -47,10 +47,12 @@ watchEffect(() => {
 					{ label: '90°', value: 90 },
 				]"
 			/>
-			<!-- <Toggle :label="__('Show Axis Title')" />
-			<InlineFormControlLabel v-if="false" :label="__('Axis Title Text')">
-				<FormControl />
-			</InlineFormControlLabel> -->
+			<Toggle :label="__('Show Axis Label')" v-model="x_axis.show_axis_label" />
+			<FormControl
+				v-if="x_axis.show_axis_label"
+				v-model="x_axis.axis_label"
+				:label="__('Axis Label')"
+			/>
 		</div>
 	</CollapsibleSection>
 </template>

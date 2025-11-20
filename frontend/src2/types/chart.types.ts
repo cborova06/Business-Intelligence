@@ -16,6 +16,8 @@ export type AxisChartConfig = {
 export type XAxis = {
 	dimension: Dimension
 	label_rotation?: number
+	axis_label?: string
+	show_axis_label?: boolean
 }
 
 export type SplitBy = {
