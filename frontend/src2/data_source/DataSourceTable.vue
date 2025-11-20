@@ -13,7 +13,7 @@ tableStore.fetchTable(props.data_source, props.table_name).then((t) => {
 })
 
 watchEffect(() => {
-	document.title = `Tables | ${props.table_name}`
+	document.title = `${__('Tables')} | ${props.table_name}`
 })
 </script>
 
@@ -53,7 +53,9 @@ watchEffect(() => {
 			class="flex h-full w-full flex-col items-center justify-center rounded bg-gray-50"
 		>
 			<LoadingIndicator class="mb-2 w-8 text-gray-500" />
-			<div class="text-lg text-gray-600">Loading table data...</div>
+			<div class="text-lg text-gray-600">
+				{{ __('Loading table data...') }}
+			</div>
 		</div>
 	</div>
 </template>

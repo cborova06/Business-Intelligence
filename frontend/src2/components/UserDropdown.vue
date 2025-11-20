@@ -47,10 +47,10 @@
 		<Dialog
 			v-model="showSwitchToV2Dialog"
 			:options="{
-				title: 'Switch to Insights v2',
+				title: __('Switch to Insights v2'),
 				actions: [
 					{
-						label: 'Continue',
+						label: __('Continue'),
 						variant: 'solid',
 						onClick: openInsightsV2,
 					},

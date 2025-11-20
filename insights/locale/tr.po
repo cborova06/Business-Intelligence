@@ -3176,3 +3176,6 @@ msgstr "Bu grafiği silmek istediğinizden emin misiniz?"
 
 msgid "Are you sure you want to delete this dashboard?"
 msgstr "Bu gösterge tablosunu silmek istediğinizden emin misiniz?"
+
+msgid "Loading table data..."
+msgstr "Tablo verileri yükleniyor..."
