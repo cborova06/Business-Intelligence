@@ -20,7 +20,7 @@ jobs:
           node-version: 18
       - name: Setup dependencies
         run: |
-          npm install @semantic-release/git @semantic-release/exec --no-save
+          npm install semantic-release @semantic-release/commit-analyzer @semantic-release/git @semantic-release/exec @semantic-release/github --no-save
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
