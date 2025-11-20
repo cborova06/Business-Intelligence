@@ -2515,6 +2515,15 @@ msgstr "Unpivot"
 msgid "Unstore Query"
 msgstr "Sorguyu Kaydetme"
 
+msgid "Connecting..."
+msgstr "Bağlanıyor..."
+
+msgid "Connected"
+msgstr "Bağlandı"
+
+msgid "Failed, Retry?"
+msgstr "Başarısız, Tekrar dene?"
+
 msgid "Untitled Analysis"
 msgstr "İsimsiz Analiz"
 

@@ -57,13 +57,13 @@ const connectButton = computed(() => {
 	}
 
 	if (sources.testing) {
-		_button.label = 'Connecting...'
+		_button.label = __('Connecting...')
 	} else if (connected.value) {
-		_button.label = 'Connected'
+		_button.label = __('Connected')
 		_button.variant = 'outline'
 		_button.theme = 'green'
 	} else if (connected.value === false) {
-		_button.label = 'Failed, Retry?'
+		_button.label = __('Failed, Retry?')
 		_button.variant = 'outline'
 		_button.theme = 'red'
 	}
@@ -91,7 +91,7 @@ const submitButton = computed(() => {
 </script>
 
 <template>
-	<Dialog v-model="show" :options="{ title: 'Connect to DuckDB' }">
+	<Dialog v-model="show" :options="{ title: __('Connect to DuckDB') }">
 		<template #body-content>
 			<Form
 				ref="form"

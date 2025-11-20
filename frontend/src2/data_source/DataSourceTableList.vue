@@ -78,7 +78,7 @@ watchEffect(() => {
 			<Dropdown
 				:options="[
 					{
-						label: 'Update Tables',
+						label: __('Update Tables'),
 						onClick: () =>
 							tableStore
 								.updateDataSourceTables(props.name)
@@ -91,7 +91,7 @@ watchEffect(() => {
 					},
 					dataSource?.is_frappe_db
 						? {
-								label: 'Update Table Links',
+								label: __('Update Table Links'),
 								onClick: () => tableStore.updateTableLinks(props.name),
 								icon: () =>
 									h(RefreshCcw, {
