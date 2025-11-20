@@ -634,19 +634,25 @@ class IbisQueryBuilder:
         context.update(additonal_context or {})
         try:
             ret = exec_with_return(expression, context)
-        except NameError as e:
-            # Typically raised when a referenced column/variable does not exist.
-            # Example: "name 'Price' is not defined"
-            missing_name = None
-            m = re.search(r"name '([^']+)' is not defined", str(e))
-            if m:
-                missing_name = m.group(1)
+        except Exception as e:
+            # Normalize Python evaluation errors into user‑friendly messages.
+            msg: str
+            if isinstance(e, NameError):
+                # Typically raised when a referenced column/variable does not exist.
+                missing_name = None
+                m = re.search(r"name '([^']+)' is not defined", str(e))
+                if m:
+                    missing_name = m.group(1)
 
-            available_columns = sorted(self.get_current_columns().keys())
-            if missing_name:
-                msg = frappe._(
-                    "Column '{0}' is not defined in this query. Available columns: {1}"
-                ).format(missing_name, ", ".join(available_columns))
+                available_columns = sorted(self.get_current_columns().keys())
+                if missing_name:
+                    msg = frappe._(
+                        "Column '{0}' is not defined in this query. Available columns: {1}"
+                    ).format(missing_name, ", ".join(available_columns))
+                else:
+                    msg = frappe._("Invalid expression: {0}").format(str(e))
+            elif isinstance(e, SyntaxError):
+                msg = frappe._("Invalid expression syntax: {0}").format(str(e))
             else:
                 msg = frappe._("Invalid expression: {0}").format(str(e))
 

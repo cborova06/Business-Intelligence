@@ -2593,6 +2593,9 @@ msgstr "Bu sorguda '{0}' adında bir sütun tanımlı değil. Kullanılabilir s�
 msgid "Invalid expression: {0}"
 msgstr "Geçersiz ifade: {0}"
 
+msgid "Invalid expression syntax: {0}"
+msgstr "Geçersiz ifade söz dizimi: {0}"
+
 msgid "Users"
 msgstr "Kullanıcılar"
 
