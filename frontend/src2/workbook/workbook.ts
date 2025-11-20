@@ -86,7 +86,7 @@ function makeWorkbook(name: string) {
 
 		confirmDialog({
 			title: __('Delete Query'),
-			message: 'Are you sure you want to delete this query?',
+			message: __('Are you sure you want to delete this query?'),
 			onSuccess: _remove,
 		})
 	}
@@ -126,7 +126,7 @@ function makeWorkbook(name: string) {
 
 		confirmDialog({
 			title: __('Delete Chart'),
-			message: 'Are you sure you want to delete this chart?',
+			message: __('Are you sure you want to delete this chart?'),
 			onSuccess: _remove,
 		})
 	}
@@ -158,7 +158,7 @@ function makeWorkbook(name: string) {
 
 		confirmDialog({
 			title: __('Delete Dashboard'),
-			message: 'Are you sure you want to delete this dashboard?',
+			message: __('Are you sure you want to delete this dashboard?'),
 			onSuccess: _remove,
 		})
 	}

@@ -126,9 +126,11 @@ function onConfirm() {
 					v-model:activeTab="activeTab"
 				/>
 				<div class="absolute bottom-3 right-3 flex gap-2">
-					<Button @click="showDialog = false"> Close </Button>
+					<Button @click="showDialog = false">
+						{{ __('Close') }}
+					</Button>
 					<Button variant="solid" :disabled="confirmDisabled" @click="onConfirm">
-						Confirm
+						{{ __('Confirm') }}
 					</Button>
 				</div>
 			</div>

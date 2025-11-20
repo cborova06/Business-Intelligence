@@ -58,16 +58,16 @@ function confirmSelection() {
 		v-model="showDialog"
 		:options="{
 			size: 'sm',
-			title: 'Select Columns',
+			title: __('Select Columns'),
 			actions: [
 				{
-					label: 'Confirm',
+					label: __('Confirm'),
 					variant: 'solid',
 					disabled: confirmDisabled,
 					onClick: confirmSelection,
 				},
 				{
-					label: 'Cancel',
+					label: __('Cancel'),
 					onClick: () => (showDialog = false),
 				},
 			],
@@ -104,7 +104,7 @@ function confirmSelection() {
 						v-model:items="selectedColumns"
 						:item-key="'name'"
 						group="columns"
-						empty-text="No columns selected"
+						empty-text="__('No columns selected')"
 					>
 						<template #item-content="{ item }">
 							<div class="flex items-center gap-1.5">
@@ -116,7 +116,7 @@ function confirmSelection() {
 				</div>
 
 				<p class="flex-shrink-0 bg-white pt-1.5 text-sm text-gray-500">
-					{{ selectedColumns.length }} columns selected
+					{{ selectedColumns.length }} {{ __('columns selected') }}
 				</p>
 			</div>
 		</template>

@@ -119,7 +119,9 @@ function reset() {
 				<!-- Fields -->
 				<div class="flex w-full flex-col gap-3 overflow-auto p-0.5 text-base">
 					<div>
-						<label class="mb-1 block text-xs text-gray-600">Select Table</label>
+						<label class="mb-1 block text-xs text-gray-600">
+							{{ __('Select Table') }}
+						</label>
 						<Autocomplete
 							:placeholder="__('Table')"
 							v-model="selectedTableOption"
@@ -135,8 +137,8 @@ function reset() {
 							:modelValue="union.distinct ? 'true' : 'false'"
 							@update:modelValue="union.distinct = $event === 'true'"
 							:options="[
-								{ label: 'Yes', value: 'true' },
-								{ label: 'No', value: 'false' },
+								{ label: __('Yes'), value: 'true' },
+								{ label: __('No'), value: 'false' },
 							]"
 						/>
 					</div>

@@ -306,7 +306,9 @@ function reset() {
 						</div>
 					</div>
 					<div>
-						<label class="mb-1 block text-xs text-gray-600">Select Join Type</label>
+						<label class="mb-1 block text-xs text-gray-600">
+							{{ __('Select Join Type') }}
+						</label>
 						<div class="flex gap-2">
 							<div
 								v-for="joinType in joinTypes"
@@ -324,17 +326,22 @@ function reset() {
 									class="h-6 w-6 text-gray-600"
 									stroke-width="1.5"
 								/>
-								<span class="block text-center text-xs">{{ joinType.label }}</span>
+								<span class="block text-center text-xs">{{ __(joinType.label) }}</span>
 							</div>
 						</div>
 						<div class="mt-1 text-xs text-gray-600">
-							{{ joinTypes.find((j) => j.value === join.join_type)?.description }}
+							{{
+								__(
+									joinTypes.find((j) => j.value === join.join_type)?.description ||
+										''
+								)
+							}}
 						</div>
 					</div>
 					<div>
-						<label class="mb-1 block text-xs text-gray-600"
-							>Select Columns to Add</label
-						>
+						<label class="mb-1 block text-xs text-gray-600">
+							{{ __('Select Columns to Add') }}
+						</label>
 						<Autocomplete
 							:multiple="true"
 							:placeholder="__('Columns')"

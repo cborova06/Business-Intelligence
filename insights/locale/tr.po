@@ -3146,3 +3146,33 @@ msgstr "Seçili satır yok"
 
 msgid "No values selected"
 msgstr "Seçili değer yok"
+
+msgid "Select Columns"
+msgstr "Sütun Seç"
+
+msgid "No columns selected"
+msgstr "Seçili sütun yok"
+
+msgid "columns selected"
+msgstr "seçili sütun"
+
+msgid "Select Join Type"
+msgstr "Join Tipini Seç"
+
+msgid "Select Columns to Add"
+msgstr "Eklenecek Sütunları Seç"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Are you sure you want to delete this query?"
+msgstr "Bu sorguyu silmek istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to delete this chart?"
+msgstr "Bu grafiği silmek istediğinizden emin misiniz?"
+
+msgid "Are you sure you want to delete this dashboard?"
+msgstr "Bu gösterge tablosunu silmek istediğinizden emin misiniz?"
