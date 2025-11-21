@@ -136,23 +136,20 @@ results = fetch_data_from_url()`
 		<template #body-content>
 			<div class="flex w-full flex-col gap-2 text-base leading-5">
 				<div class="">
-					In the Script Query interface, you can write custom Python scripts to query the
-					database and retrieve data as a Pandas DataFrame. You can also fetch data from
-					external sources using Pandas functions
+					Script Sorgu arayüzünde, veritabanından veri almak ve Pandas DataFrame olarak döndürmek için özel Python betikleri yazabilirsiniz. Ayrıca Pandas fonksiyonlarını kullanarak harici kaynaklardan veri çekebilirsiniz.
 				</div>
 				<div>
-					For detailed information about these functions and how to use them, please refer
-					to
+					Bu fonksiyonlar ve nasıl kullanılacakları hakkında detaylı bilgi için lütfen
 					<a
 						class="text-blue-500 underline"
-						href="https://frappeframework.com/docs/user/en/desk/scripting/script-api"
+						href="https://brvsoftware.com.tr"
 					>
-						Frappe Framework's Script API
+						Framework'ün Script API'sine
 					</a>
+					bakınız.
 				</div>
 				<div class="">
-					Example script to read data from a CSV file hosted on a URL and create a Pandas
-					DataFrame:
+					Bir URL'de barındırılan bir CSV dosyasından veri okuyup Pandas DataFrame oluşturan örnek betik:
 				</div>
 				<div class="rounded bg-gray-50 text-sm">
 					<Code :readOnly="true" language="python" :model-value="exampleCode"> </Code>
